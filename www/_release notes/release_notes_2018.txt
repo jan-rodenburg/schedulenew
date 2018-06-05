@@ -1,0 +1,28 @@
+2018
+
+- Manage Resources
+  Manage Users
+  Manage Coworkers
+  Manage Accessories
+  Deze 4 tabellen hebben nu datatables funktionaliteit.
+
+- lib/template.class.php - stuurt de header uit. (bevat de js voor datatables).
+
+- templates/admin.template.php - wijzigingen voor datatables.
+
+- als je dient te weten welke schedule is ingelogd: $_SESSION['sessionScheduleAdmin']
+we willen zo min mogelijk differentiatie naar schedule (verschillende werkplaatsen).
+
+- er komt een keuze op inlogscherm: x phone version, of x desktop version. dit wordt een sessievar.
+
+- 11-support mobile : er komt hybride oplossing:
+alles met datatables.
+maar soms voor phone wordt een andere template geladen, voor complexe pagina-s:
+voor template/reservation.template.php komt er ook een template/reservation.phone.php.
+
+over datatables:
+- het kan niet dealen met rowspan en colspan!
+- ik gebruik classes: https://datatables.net/extensions/responsive/classes
+-
+
+
