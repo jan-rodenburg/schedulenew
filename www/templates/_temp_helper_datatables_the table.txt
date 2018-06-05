@@ -1,0 +1,171 @@
+
+
+<!-- print_manage_resources -->
+<form name="manageResource" method="post" action="admin_update.php" onsubmit="return checkAdminForm();">
+<div class="tableTitle tableTitle_new"><?php echo translate('All Resources')?></div>
+<table class="admin resources" width="100%" border="0" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+    <!--td class="tableBorder"-->
+	<td>
+      <table  id="table_id_manage_resource" class="display responsive wrap manageResource"  width="100%" >
+
+
+		<?php 
+/*
+zie
+https://datatables.net/extensions/responsive/examples/display-control/classes.html
+https://datatables.net/extensions/responsive/examples/column-control/classes
+https://datatables.net/extensions/responsive/classes#Breakpoints
+*/
+
+	//$ss =  array[];
+echo 'listview:'.	$listview;
+if ( ($listview == 'off') && (true || ($_SESSION['sessionScheduleAdmin'] == "Uitleen-2.42"))) {
+// ss = show when/what screen settings for datatables js package // init in template.class
+// class defs, zie: https://datatables.net/extensions/responsive/classes
+echo ' editmode';	 
+	$ss[] = "all"; //edit",   
+	$ss[] = "none"; //barcode",   
+	$ss[] = "all"; //duplicate",   
+	$ss[] = "all"; //status",   
+	$ss[] = "all"; //name",   
+	$ss[] = "never"; //schedule never",   
+	$ss[] = "none"; //serial",   
+	$ss[] = "none"; //package",   
+	$ss[] = "desktop tablet"; //description",   
+	$ss[] = "desktop "; //notes",   
+	$ss[] = "desktop"; //accesoires",   
+	$ss[] = "all"; //uitleennivo",   
+	$ss[] = "desktop"; //owner",   
+	$ss[] = "all"; //uitleenperiode",   
+	$ss[] = "all"; //delete",   
+	$ss[] = "all"; //deletebutton",   
+	$ss[] = "none"; //maintenance",   
+	$ss[] = "none"; //datum_aankoop",   
+	$ss[] = "none"; //aankoopbedrag"
+}
+if ( ($listview == 'on') && (true || ($_SESSION['sessionScheduleAdmin'] == "Uitleen-2.42"))) {
+// ss = show when/what screen settings for datatables js package // init in template.class
+echo ' listmode';	 
+	$ss[] = "never"; //edit",   
+	$ss[] = "never"; //barcode",   
+	$ss[] = "never"; //duplicate",   
+	$ss[] = "never"; //status",   
+	$ss[] = "all"; //name",   
+	$ss[] = "never"; //schedule never",   
+	$ss[] = "all"; //serial",   
+	$ss[] = "all"; //package",   
+	$ss[] = "all"; //description",   
+	$ss[] = "all "; //notes",   
+	$ss[] = "all"; //accesoires",   
+	$ss[] = "all"; //uitleennivo",   
+	$ss[] = "all"; //owner",   
+	$ss[] = "all"; //uitleenperiode",   
+	$ss[] = "never"; //delete",   
+	$ss[] = "never"; //deletebutton",   
+	$ss[] = "all"; //maintenance",   
+	$ss[] = "all"; //datum_aankoop",   
+	$ss[] = "all"; //aankoopbedrag"
+}
+$i=0;
+
+		echo "<thead>
+        <tr class=\"rowHeaders\">
+		<td class=\" childrow\"></td>
+          <td class=\"".$ss[$i++]." edit\">" . translate('Edit') . "</td>
+		  <td class=\"".$ss[$i++]." barcode\">" . translate('Barcode') . "</td>
+		  <td class=\"".$ss[$i++]." duplicate\">" . translate('Duplicate') . "</td>
+          <td class=\"".$ss[$i++]." status\">" . translate('status') . "</td>
+		  <td class=\"".$ss[$i++]." name\">". translate('Resource Name') . "</td>          
+		  <td class=\"".$ss[$i++]." schedule\" >". translate('Schedule') . "</td>
+		  <td class=\"".$ss[$i++]." serial\">" .  translate('Serial_nr') . "</td>
+          <td class=\"".$ss[$i++]." package\">" . translate('Package') . "</td>
+		  <td class=\"".$ss[$i++]." description\">" . translate('Description') . "</td>
+		  <td class=\"".$ss[$i++]." notes\">" . translate('Notes') . "</td>
+		  <td class=\"".$ss[$i++]." accesoires\">" . translate('Fixed accesoires') . "</td>
+		  <td class=\"".$ss[$i++]." uitleennivo\">" . translate('uitleennivo') . "</td>
+	      <td class=\"".$ss[$i++]." owner\">" .  translate('Owner') . "</td>
+	  	  <td class=\"".$ss[$i++]." uitleenperiode\">" . translate('uitleenperiode') . "</td>
+          <td class=\"".$ss[$i++]." delete\">" . translate('Delete') . "</td>
+          <td class=\"".$ss[$i++]." deletebutton\"> </td>
+          <td class=\"".$ss[$i++]." maintenance\">" . translate('Maintenance') . "</td>
+          <td class=\"".$ss[$i++]." datum_aankoop\">" . translate('datum_aankoop') . " </td>
+          <td class=\"".$ss[$i++]." aankoopbedrag\">" . translate('aankoopbedrag') . " </td>
+        </tr></thead>";
+
+	if (!$resources)
+		echo '<tr class="cellColor0"><td colspan="19" style="text-align: center;">' . $err . '</td></tr>' . "\n";
+	if ($resources)
+		echo '<tbody  id="tbody_list">'; // ivm jquery
+	
+	for ($i = 0; is_array($resources) && $i < count($resources); $i++) {
+			$cur = $resources[$i];
+			// janr
+		if ($cur['status'] == 'd') $deletestring=" deleted";	
+		if ($cur['status'] <> 'd') $deletestring=" ";
+		
+		$togglestring =           '<td class="status" >' . $link->getLink("admin_update.php?fn=togResource&amp;machid=" . $cur['machid'] . "&amp;status=" . $cur['status'], $cur['status'] == 'a' ? translate('Active') : translate('Inactive'), '', '', translate('Toggle this resource active/inactive')) . $deletestring  ."</td>\n";
+		
+		if ($cur['status'] == 'd') {
+			$togglestring = '<td>' . $link->getLink("admin_update.php?fn=togResource&amp;machid=" . $cur['machid'] . "&amp;status=" . $cur['status'], 'Undelete' , translate('Toggle this resource to active/inactive')) . $deletestring  ."</td>\n"	;	
+		}
+		// start print header row
+		if ($cur['status'] <> 'd') {
+			
+if (isset($cur['description']) && (strpos($cur['description'], "http://") === 0)) {
+	$thedescription = $cur['description'];
+	$thedescription = CmnFns::makelink ($cur['description'], true);
+}else{
+	$thedescription = $cur['description'];
+}
+
+
+
+			echo "<tr class=\"cellColor" . ($i%2) . "\" align=\"center\" id=\"tr$i\">\n"
+			.  '<td class=\"childrow\"></td>'			
+				. '<td class="edit">' . $link->getLink($_SERVER['PHP_SELF'] . '?' . preg_replace("/&machid=[\d\w]*/", "", $_SERVER['QUERY_STRING']) . '&amp;machid=' . $cur['machid'] . ((strpos($_SERVER['QUERY_STRING'], $pager->getLimitVar())===false) ? '&amp;' . $pager->getLimitVar() . '=' . $pager->getLimit() : ''), translate('IconEdit'), '', '', translate('Edit data for', array($cur['name']))) . "</td>\n"
+
+			. '<td class="barcode" style="text-align:left">' . $cur['machid'] . "</td>\n"
+				. '<td class="duplicate">' . $link->getLink("admin_update.php?fn=dupResource&amp;machid=" . $cur['machid'] . "&amp;duplicate=yes", translate('Duplicate'), '', '', translate('Make instant COPY of this resource')) . "</td>\n"
+				
+				. $togglestring 
+				
+			. '<td class="name" style="text-align:left">' . $cur['name'] . "</td>\n"
+			   
+				. '<td class="schedule never" style="text-align:left;display:none">' . $cur['scheduletitle'] . "</td>\n"
+				
+				. '<td class="serial" style="text-align:left">' . $cur['serial_nr'] . "</td>\n"
+				. '<td class="package" style="text-align:left">'. (isset($cur['package']) ?  $cur['package'] : '') . "</td>\n"
+				. '<td class="description" style="text-align:left">'.$thedescription."</td>\n"
+				. '<td class="notes" style="text-align:left">'. (isset($cur['notes']) ?  $cur['notes'] : '&nbsp;') . "</td>\n"
+				. '<td class="accesoires" style="text-align:left">'. (isset($cur['vast_toebehoren']) ?  $cur['vast_toebehoren'] : '&nbsp;') . "</td>\n"
+				. '<td class="uitleennivo" style="text-align:left">'. (isset($cur['uitleennivo']) ?  $cur['uitleennivo'] : '&nbsp;') . "</td>\n"
+				. '<td class="owner" style="text-align:left">'. (isset($cur['rowner']) ?  $cur['rowner'] : '&nbsp;') . "</td>\n"
+				. '<td class="uitleenperiode" style="text-align:left">'. (isset($cur['uitleenperiode']) ?  $cur['uitleenperiode'] : '&nbsp;') . "</td>\n"
+				. "<td class=\"checkbox\" ><input type=\"checkbox\" name=\"machid[]\" value=\"" . $cur['machid'] . "\" onclick=\"adminRowClick(this,'tr$i',$i);\" /></td>\n";
+			echo '<td class="delete" style="text-align:left">';
+			echo submit_button(translate('Delete'), 'machid') . hidden_fn('delResource');
+			echo "</td>\n";
+			echo'<td class="maintenance"> '. (isset($cur['maintenance']) ?  $cur['maintenance'] : '&nbsp;') . '</td>
+				<td class="datum_aankoop">'. (isset($cur['datum_aankoop']) ?  $cur['datum_aankoop'] : '&nbsp;') . ' </td>
+				<td class="aankoopbedrag">'. (isset($cur['aankoopbedrag']) ?  $cur['aankoopbedrag'] : '&nbsp;') . ' </td>';			
+			echo "</tr>\n";
+		}
+	}
+
+
+
+    ?>
+					<!-- janr search -->
+				</tbody>
+      </table>
+    </td>
+  </tr>
+</table>
+<br />
+<?php
+	echo submit_button(translate('Delete'), 'machid') . hidden_fn('delResource');
+	echo '</form>';
+
+
+}

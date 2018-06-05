@@ -1,0 +1,34 @@
+[Tue, 15 May 2018 15:00:44]	reservation pk15afad9fc41cfb added.  machid:pk1573dbc812003e, dates:1526335200 - 1526508000, start:660, end:720	1023360	::1
+[Tue, 15 May 2018 15:00:44]	reservation pk15afad9fc41cfb deleted.	1023360	::1
+[Tue, 15 May 2018 15:00:48]	reservation pk15afada00adec6 added.  machid:pk1573dbc812003e, dates:1526335200 - 1526508000, start:660, end:720	1023360	::1
+[Tue, 22 May 2018 10:48:21]	reservation pk15b03d9558fcea added.  machid:pk155f04f17da5e5, dates:1526940000 - 1527112800, start:660, end:720	1024334	::1
+[Tue, 22 May 2018 16:40:04]	Resource pk155f04f17da5e5 toggled on/off.	pk14c31b7c04ac67	::1
+[Tue, 22 May 2018 16:40:16]	Resource pk155f04f17da5e5 toggled on/off.	pk14c31b7c04ac67	::1
+[Tue, 22 May 2018 16:40:28]	Resource pk155f04f17da5e5 toggled on/off.	pk14c31b7c04ac67	::1
+[Tue, 22 May 2018 16:40:39]	Resource pk155f04f17da5e5 toggled on/off.	pk14c31b7c04ac67	::1
+[Wed, 23 May 2018 11:21:59]	User data modified. Data provided: fname- aaÜbelhörártková lname- aaHöglund email- jan2014@larka.nl phone-  institution-  position- 	pk1593e70767e40c	::1
+[Mon, 28 May 2018 10:32:51]	reservation pk15b0bbeb3a90ee added.  machid:pk1561629ba19fc6, dates:1527458400 - 1527544800, start:600, end:720	1024146	::1
+[Tue, 29 May 2018 09:42:48]	Resource pk155f04f17da5e5 toggled on/off.	pk14c31b7c04ac67	::1
+[Tue, 29 May 2018 09:43:15]	Resource pk155f04f17da5e5 toggled on/off.	pk14c31b7c04ac67	::1
+[Tue, 29 May 2018 12:17:18]	Resource 242-16 toggled on/off.	pk14c31b7c04ac67	::1
+[Tue, 29 May 2018 15:52:53]	Resources deleted. pk155f04f17da5e5, pk1561629ba19fc6	pk14c31b7c04ac67	::1
+[Thu, 31 May 2018 06:32:41]	Resource pk1573dbc812003e toggled on/off.	pk14c31b7c04ac67	::1
+[Thu, 31 May 2018 06:32:54]	Resource pk1573dbc812003e toggled on/off.	pk14c31b7c04ac67	::1
+[Thu, 31 May 2018 08:28:55]	Resource duplicated. 4K/HD camcorder 09 Sony FDR-AX53Copy	pk14c31b7c04ac67	Uitleen-2.42
+[Thu, 31 May 2018 08:29:14]	Resource pk15b0f9627b6571 toggled on/off.	pk14c31b7c04ac67	::1
+[Thu, 31 May 2018 08:31:09]	Resource edited. 4K/HD camcorder 09 Sony FDR-AX53 Copy pk15b0f9627b6571	pk14c31b7c04ac67	Uitleen-2.42
+[Thu, 31 May 2018 11:09:12]	Resource pk156ec15abaf4e3 toggled on/off.	pk14c31b7c04ac67	::1
+[Thu, 31 May 2018 11:09:23]	Resource pk156ec15abaf4e3 toggled on/off.	pk14c31b7c04ac67	::1
+[Thu, 31 May 2018 13:26:55]	Resource pk153a9585d34699 toggled on/off.	pk14c31b7c04ac67	::1
+[Thu, 31 May 2018 14:13:11]	Resource edited. 4K/HD camcorder 09 Sony FDR-AX53 Copy pk15b0f9627b6571	pk14c31b7c04ac67	Uitleen-2.42
+[Thu, 31 May 2018 17:39:14]	Resource duplicated. vh HD camcorder 03 Canon Legria HF G40Copy	pk14c31b7c04ac67	Uitleen-2.42
+[Thu, 31 May 2018 18:47:48]	Resource pk156aa045b09240 toggled on/off.	pk14c31b7c04ac67	::1
+[Thu, 31 May 2018 18:48:45]	Resource pk156ec15abaf4e3 toggled on/off.	pk14c31b7c04ac67	::1
+[Thu, 31 May 2018 19:00:31]	reservation pk15b102a2fa2f7b added.  machid:pk1573dbc812003e, dates:1527717600 - 1527804000, start:540, end:720	pk14c31b7c04ac67	::1
+[Fri, 01 Jun 2018 07:58:11]	Resource added. test new resource	pk14c31b7c04ac67	Uitleen-2.42
+[Fri, 01 Jun 2018 07:59:10]	Resource edited. test new resource jklhjljlkhjgjsdn	pk14c31b7c04ac67	Uitleen-2.42
+[Fri, 01 Jun 2018 15:53:02]	reservation pk15b114fbe9fb9b added.  machid:pk15b0f9627b6571, dates:1528927200 - 1529532000, start:900, end:720	pk14c31b7c04ac67	::1
+[Mon, 04 Jun 2018 14:27:43]	User data modified. Data provided: fname- Andre aa lname- Klein email- a.kleinx@xxs4all.nl phone-  institution-  position- 	pk15148214988241	::1
+[Mon, 04 Jun 2018 15:42:35]	New user registered. Data provided: fname- jan aaa lname- rodenburg email- jan10@larka.nl phone- 643376433	pk15b1541ca7b110	::1
+[Mon, 04 Jun 2018 15:43:33]	User data modified. Data provided: fname- jan aaa lname- rodenburg email- jan10@larka.nl phone- 643376433 institution-  position- 	pk15b1541ca7b110	::1
+[Mon, 04 Jun 2018 15:44:09]	User data modified. Data provided: fname- aaa jan aaa lname- rodenburg email- jan10@larka.nl phone- 643376433 institution-  position- 	pk15b1541ca7b110	::1

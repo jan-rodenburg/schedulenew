@@ -1,0 +1,31 @@
+/* Janr additions
+/* stylesheet for print */
+/*  
+/*  listview, zie resource lijst.
+listview toont alle velden maar geen buttons,
+tbv wens om een print te maken. (toolotheek),
+deze css funktie vervallen, overgenomen door datatables, zie array $ss[] in admin template r650
+ */
+
+body {
+/*		background-color: lightgreen;  */
+	
+}
+/*	table.resources table tr.rowHeaders td, */
+table.resources table tr td.edit,
+table.resources table tr td.barcode,
+table.resources table tr td.status,
+table.resources table tr td.duplicate,
+table.resources table tr td.checkbox,
+table.resources table tr td.delete
+{
+	display:none;
+}
+table.resources table tr td.maintenance,
+table.resources table tr td.datum_aankoop,
+table.resources table tr td.aankoopbedrag
+	{
+		
+		display:table-cell;
+		  text-align: left;
+	}

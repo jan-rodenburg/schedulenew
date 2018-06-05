@@ -1,0 +1,73 @@
+/* Janr iphone additions
+/* Janr : My Mod */
+
+
+
+.container {
+	width:100%;
+	clear:both;
+	border:1px solid yellow;
+	display:block;
+	}
+/*clear all in tables*/
+/*
+ table,
+ thead,
+ tbody,
+ tfoot,
+ tr,
+ th,
+ td {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-collapse: inherit;
+    border-spacing: 0;
+    border-color: inherit;
+    vertical-align: inherit;
+    text-align: left;
+    font-weight: inherit;
+    -webkit-border-horizontal-spacing: 0;
+    -webkit-border-vertical-spacing: 0;
+
+}
+th, td {
+     display: inline;
+}
+/*end clear all in tables*/
+/*now rebuild it*/
+/*
+ table,
+ thead,
+ tbody,
+ tfoot,
+ tr,
+ th,
+ td {
+    display: block;
+ }
+
+th, td {
+     display: block;
+}
+*/
+	
+	
+/*all TD in a table
+td.rowHeaders, .rowHeaders td ,
+table tbody#tbody_list tr.cellColor0 td ,
+table tbody#tbody_list tr.cellColor1 td  {
+	color:blue;
+	background-color:grey;
+}
+ */
+ 
+ /*all TD in a table */
+td.rowHeaders, .rowHeaders td ,
+table tbody#tbody_list tr.cellColor0 td ,
+table tbody#tbody_list tr.cellColor1 td  {
+	text-overflow: ellipsis;
+}

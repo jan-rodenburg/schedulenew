@@ -1,0 +1,13 @@
+19 december 2011
+
+bij nwe hosting op uitleen.rietveldacademie.nl
+
+---my sql conversie
+	# everything one hour earlier
+	UPDATE `db01_reservations` SET start_date=start_date-3600, end_date=end_date-3600 WHERE 1
+	
+	# reservations ending before wintertime even one hour earlier
+	UPDATE `db01_reservations` SET start_date=start_date-3600, end_date=end_date-3600 WHERE end_date<1319932800
+	
+	# reservations starting before wintertime but ending after wintertime, tarttime 1 hour earlier
+	UPDATE `db01_reservations` SET start_date=start_date-3600 WHERE start_date<1319932800 AND end_date>=1319932800

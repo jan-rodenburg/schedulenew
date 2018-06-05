@@ -1,0 +1,520 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)http://localhost:7777/schedulenew/www/admin.php?tool=resources -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>
+	System Administration	</title>
+	
+	<link rel="alternate" type="application/rss+xml" title="phpScheduleIt" href="http://localhost:7777/schedulenew/www/rss.php?id=pk14c31b7c04ac67">
+	<link rel="shortcut icon" href="http://localhost:7777/schedulenew/www/favicon.ico">
+	<link rel="icon" href="http://localhost:7777/schedulenew/www/favicon.ico">
+	<script language="JavaScript" type="text/javascript" src="./savedisplay-clean_files/functions.js.download"></script>
+	<script language="JavaScript" type="text/javascript" src="./savedisplay-clean_files/functions18.js.download"></script>
+	<script language="JavaScript" type="text/javascript" src="./savedisplay-clean_files/ajax.js.download"></script>
+		
+	<script language="JavaScript" type="text/javascript" src="./savedisplay-clean_files/jquery-3.3.1.js.download"></script>
+	<script language="JavaScript" type="text/javascript" src="./savedisplay-clean_files/jquery.cookie.js.download"></script>
+	<script language="JavaScript" type="text/javascript" src="./savedisplay-clean_files/jquery.quicksearch.js.download"></script>
+		<link rel="stylesheet" type="text/css" href="./savedisplay-clean_files/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="./savedisplay-clean_files/buttons.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="./savedisplay-clean_files/fixedColumns.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="./savedisplay-clean_files/responsive.dataTables.css">
+	 
+	<script type="text/javascript" src="./savedisplay-clean_files/jquery.dataTables.js.download"></script>
+	<script type="text/javascript" src="./savedisplay-clean_files/dataTables.buttons.js.download"></script>
+	<script type="text/javascript" src="./savedisplay-clean_files/dataTables.fixedColumns.js.download"></script>
+	<script type="text/javascript" src="./savedisplay-clean_files/dataTables.responsive.js.download"></script>
+	
+		
+	<script type="text/javascript"><!--//
+jQuery(document).ready(function(){
+	
+	if (jQuery('.welcomeBack')[0]) {
+		// this is the main schedule window
+		window.name='schedule';
+		//alert(window.name); 
+	}
+
+    $('#table_id_manage_resource').DataTable( {
+        "columnDefs": [
+            {
+                "targets": [ 0 ,1 ,5],
+                "visible": false,
+                "searchable": false
+            }
+        ]
+    } );
+	
+	
+	
+});
+	//--></script>
+
+
+<link rel="stylesheet" href="./savedisplay-clean_files/sprite.css" type="text/css">
+	<style type="text/css">
+	@import url(jscalendar/calendar-blue-custom.css);
+	@import url(css.css);
+	@import url(css-jr.css);
+		</style>
+	<script type="text/javascript" src="./savedisplay-clean_files/calendar.js.download"></script>
+	<script type="text/javascript" src="./savedisplay-clean_files/calendar-en.js.download"></script>
+	<script type="text/javascript" src="./savedisplay-clean_files/calendar-setup.js.download"></script>
+	</head><!-- template.class -->
+	<body><div align="right" style="margin-right:40px;position:absolute;top:-40px"><a id="top" name="top"></a></div>
+	<div align="left" style="margin-top:6px;margin-left:4px;"><img src="./savedisplay-clean_files/rietveldlogo.gif" alt="logo"></div>	<table width="100%" border="0" cellspacing="0" cellpadding="5" class="mainBorder">
+	  <tbody><tr>
+		<td class="mainBkgrdClr">
+		  <p>
+			<a href="http://localhost:7777/schedulenew/www/ctrlpnl.php">Home</a>
+			|
+			<a href="http://localhost:7777/schedulenew/www/schedule.php?date=05-31-2018">Bookings</a>
+	
+			|
+			<a href="http://localhost:7777/schedulenew/www/schedule.php?date=05-31-2018&amp;today=1">Today</a>
+				
+						
+	
+
+						|
+				<a href="http://localhost:7777/schedulenew/www/admin.php?tool=reservations">Manage Reservations</a>
+						
+				| <a href="http://localhost:7777/schedulenew/www/admin.php?tool=resources#" onclick="jQuery(&#39;#quicklinks-wrapper&#39;).slideToggle(&#39;slow&#39;)">More...</a></p>
+				<div id="quicklinks-wrapper" style="position:absolute; left:18em; display:none; width:150px; border:2px solid #A2B5CD">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+	  <tbody><tr>
+		<td>
+		  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tbody><tr>
+			  <td class="tableTitle" style="background-color:#A2B5CD;">
+				· Links			  </td>
+			  <td class="tableTitle" style="background-color:#A2B5CD;"><div align="right">
+				  <a href="javascript: help(&#39;quick_links&#39;);" style="color: #FFFFFF">?</a>
+				</div>
+			  </td>
+			</tr>
+		  </tbody></table>
+		  <div id="quicklinks" style="display: block;">
+		  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tbody><tr style="padding: 5px;" class="cellColor">
+			  <td colspan="2">
+				<p><b space="">&nbsp;</b> <a href="http://localhost:7777/schedulenew/www/ctrlpnl.php">Search to Timeslot</a>
+</p>
+<p><b space="">&nbsp;</b> <a href="http://localhost:7777/schedulenew/www/admin.php?tool=users">Manage Users</a>
+</p>
+<p><b space="">&nbsp;</b> <a href="http://localhost:7777/schedulenew/www/admin.php?tool=coworkers">Manage Coworkers</a>
+</p>
+<p><b space="">&nbsp;</b> <a href="http://localhost:7777/schedulenew/www/admin.php?tool=resources">Manage Resources</a>
+</p>
+<p><b space="">&nbsp;</b> <a href="http://localhost:7777/schedulenew/www/admin.php?tool=additional_resources">Manage Accessories</a>
+</p>
+<p><b space="">&nbsp;</b> <a href="http://localhost:7777/schedulenew/www/admin.php?tool=archief">Show Archive Previous Years</a>
+</p>
+
+			  </td>
+			</tr>
+		  </tbody></table>
+		  </div>
+		</td>
+	  </tr>
+	</tbody></table>
+					</div>
+					</td>
+		<td class="mainBkgrdClr" valign="top"></td>
+		<td class="mainBkgrdClr" valign="top">
+		  <div align="right">
+		  <div class="welcomeBack">Welcome Back, Admin schedulenew@larka.nl </div>
+			<p></p>
+			<p>
+			31-05-2018 - 07:18:59 
+				|
+			<a href="javascript: help();">Help</a>
+			  	|
+			
+			<a href="http://localhost:7777/schedulenew/www/index.php?logout=true">Log Out</a>
+			</p>
+		  </div>
+		</td>
+	  </tr>
+	</tbody></table>
+	
+	<table class="main" width="100%" border="0" cellspacing="0" cellpadding="10">
+	  <tbody><tr>
+		<td class="mainBkgrdClr">
+		  	<div id="table_id_manage_resource_wrapper" class="dataTables_wrapper"><div class="dataTables_length" id="table_id_manage_resource_length"><label>Show <select name="table_id_manage_resource_length" aria-controls="table_id_manage_resource" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="table_id_manage_resource_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="table_id_manage_resource"></label></div><table id="table_id_manage_resource" class="display dataTable" style="width: 100%;" role="grid" aria-describedby="table_id_manage_resource_info">
+					<thead>
+						<tr role="row"><th class="sorting" tabindex="0" aria-controls="table_id_manage_resource" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 474px;">Office</th><th class="sorting" tabindex="0" aria-controls="table_id_manage_resource" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 284px;">Age</th><th class="sorting" tabindex="0" aria-controls="table_id_manage_resource" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 453px;">Start date</th></tr>
+					</thead>
+					<tbody>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+					<tr role="row" class="odd">
+							
+							
+							<td>Tokyo</td>
+							<td>33</td>
+							<td>2008/11/28</td>
+							
+						</tr><tr role="row" class="even">
+							
+							
+							<td>London</td>
+							<td>47</td>
+							<td>2009/10/09</td>
+							
+						</tr><tr role="row" class="odd">
+							
+							
+							<td>San Francisco</td>
+							<td>66</td>
+							<td>2009/01/12</td>
+							
+						</tr><tr role="row" class="even">
+							
+							
+							<td>London</td>
+							<td>41</td>
+							<td>2012/10/13</td>
+							
+						</tr><tr role="row" class="odd">
+							
+							
+							<td>San Francisco</td>
+							<td>28</td>
+							<td>2011/06/07</td>
+							
+						</tr><tr role="row" class="even">
+							
+							
+							<td>New York</td>
+							<td>61</td>
+							<td>2012/12/02</td>
+							
+						</tr><tr role="row" class="odd">
+							
+							
+							<td>London</td>
+							<td>38</td>
+							<td>2011/05/03</td>
+							
+						</tr><tr role="row" class="even">
+							
+							
+							<td>New York</td>
+							<td>21</td>
+							<td>2011/12/12</td>
+							
+						</tr><tr role="row" class="odd">
+							
+							
+							<td>New York</td>
+							<td>46</td>
+							<td>2011/12/06</td>
+							
+						</tr><tr role="row" class="even">
+							
+							
+							<td>Edinburgh</td>
+							<td>22</td>
+							<td>2012/03/29</td>
+							
+						</tr></tbody>
+					<tfoot>
+						<tr><th rowspan="1" colspan="1">Office</th><th rowspan="1" colspan="1">Age</th><th rowspan="1" colspan="1">Start date</th></tr>
+					</tfoot>
+				</table><div class="dataTables_info" id="table_id_manage_resource_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div><div class="dataTables_paginate paging_simple_numbers" id="table_id_manage_resource_paginate"><a class="paginate_button previous disabled" aria-controls="table_id_manage_resource" data-dt-idx="0" tabindex="0" id="table_id_manage_resource_previous">Previous</a><span><a class="paginate_button current" aria-controls="table_id_manage_resource" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="table_id_manage_resource" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="table_id_manage_resource" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="table_id_manage_resource" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="table_id_manage_resource" data-dt-idx="5" tabindex="0">5</a><a class="paginate_button " aria-controls="table_id_manage_resource" data-dt-idx="6" tabindex="0">6</a></span><a class="paginate_button next" aria-controls="table_id_manage_resource" data-dt-idx="7" tabindex="0" id="table_id_manage_resource_next">Next</a></div></div>
+
+	<br><br>
+<form name="addResource" method="post" action="http://localhost:7777/schedulenew/www/admin_update.php" onsubmit="return checkAddResource(this);">
+<table width="100%" border="0" cellspacing="0" cellpadding="1" align="center">
+  <tbody><tr>
+    <td class="tableBorder">
+      <table width="100%" id="table_id-one-item" class="responsive-one-item" border="0" cellspacing="1" cellpadding="0">
+	  <tbody><tr>
+<td class="tableTitle" colspan="2">� Add a Resource</td>
+</tr>
+	          <tr>
+          <td colspan="2" width="200" class="formNames">Barcode<input type="hidden" name="machid" value="">
+          &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="50" name="newmachid" class="textbox" value="">
+          <br>Do not touch this field UNLESS you scan a unique barcode (ADD mode)		  <a href="javascript: info(&#39;barcode-resource&#39;);">(Info)</a></td>
+        </tr>
+        <tr>
+          <td width="200" class="formNames">Resource Name</td>
+          <td class="cellColor"><input type="text" size="75" name="name" class="textbox" value=""> <span class="star">*</span>
+          </td>
+        </tr>
+		<tr>
+		  <td class="formNames">Serial #</td>
+          <td class="cellColor"><input type="text" size="50" name="serial_nr" class="textbox" value="">
+          </td>
+		</tr>
+
+        <tr>
+          <td class="formNames">Location</td>
+          <td class="cellColor"><input type="text" size="75" name="location" class="textbox" value="">
+          </td>
+        </tr>
+        <tr style="display:none">
+          <td class="formNames">Phone</td>
+          <td class="cellColor"><input type="text" size="16" name="rphone" class="textbox" value="">
+          </td>
+        </tr>
+				<tr>
+		  <td class="formNames">Package</td>
+          <td class="cellColor"><input type="text" size="64" name="package" class="textbox" value="">
+          </td>
+		</tr>
+		<tr>
+		  <td class="formNames">Description</td>
+		  <td class="cellColor"><textarea name="description" class="textbox" rows="5" cols="50"></textarea>
+          </td>
+		</tr>
+        <tr>
+          <td class="formNames">Oddities</td>
+          <td class="cellColor"><textarea name="notes" class="textbox" rows="10" cols="50"></textarea>
+          </td>
+        </tr>
+		<tr>
+		  <td class="formNames">Fixed accesoires</td>
+		  <td class="cellColor"><textarea name="vast_toebehoren" class="textbox" rows="5" cols="50"></textarea>
+          </td>
+		</tr>
+
+		<tr>
+		  <td class="formNames">Maintenance</td>
+		        <td class="cellColor"><textarea name="maintenance" class="textbox" rows="10" cols="50"></textarea>
+          </td>
+		</tr>
+
+		<tr>
+		  <td class="formNames">Owner</td>
+          <td class="cellColor"><input type="text" size="50" name="rowner" class="textbox" value="GRA">
+          </td>
+		</tr>
+		<tr>
+		  <td class="formNames">Date of purchase</td>
+          <td class="cellColor"><input type="text" size="50" name="datum_aankoop" class="textbox" value="">
+          </td>
+		</tr>		
+		<tr>
+		  <td class="formNames">Loan out level</td>
+          <td class="cellColor"><input type="text" size="3" name="uitleennivo" maxlength="1" class="textbox" value="1">
+          <a href="javascript: info(&#39;uitleennivo&#39;);">(Info)</a></td>
+		</tr>
+		<tr>
+		  <td class="formNames">Value category</td>
+          <td class="cellColor"><input type="text" size="3" name="waardecat" maxlength="1" class="textbox" value="1">
+          <a href="javascript: info(&#39;waardecat&#39;);">(Info)</a></td>
+		</tr>		
+		<tr>
+		  <td class="formNames">Reservation Period</td>
+          <td class="cellColor"><input type="text" size="3" name="uitleenperiode" maxlength="1" class="textbox" value="0">
+          <a href="javascript: info(&#39;uitleenperiode&#39;);">(Info)</a></td>
+		</tr>	
+		<tr>
+		  <td class="formNames">Purchase price</td>
+          <td class="cellColor"><input type="text" size="50" name="aankoopbedrag" class="textbox" value="">
+          </td>
+		</tr>
+
+		
+		<tr>
+		<td class="formNames">Schedule		</td>
+		<td class="cellColor">
+		
+		<input type="hidden" name="scheduleid" class="textbox" value="Uitleen-2.42">Uitleen 2.42		
+		</td>
+		</tr>
+		        <tr>
+		  <td class="formNames">Approval required, Student is allowed to self-reservation</td>
+		  <td class="cellColor"><input type="checkbox" name="approval">
+		  </td>
+		</tr>
+		<tr>
+		  <td class="formNames">Allow Multiple Day Reservations</td>
+		  <td class="cellColor"><input type="checkbox" name="allow_multi" checked="checked" onclick="showHideMinMax(this);">
+		  </td>
+		</tr>
+		<tr>
+		  <td class="formNames">Minimum Reservation Time</td>
+		  <td class="cellColor">
+		  <select name="minH" class="textbox" id="minH">
+		  <option value="0">0 hours</option>
+<option value="1">1 hours</option>
+<option value="2">2 hours</option>
+<option value="3">3 hours</option>
+<option value="4">4 hours</option>
+<option value="5">5 hours</option>
+<option value="6">6 hours</option>
+<option value="7">7 hours</option>
+<option value="8">8 hours</option>
+<option value="9">9 hours</option>
+<option value="10">10 hours</option>
+<option value="11">11 hours</option>
+<option value="12">12 hours</option>
+<option value="13">13 hours</option>
+<option value="14">14 hours</option>
+<option value="15">15 hours</option>
+<option value="16">16 hours</option>
+<option value="17">17 hours</option>
+<option value="18">18 hours</option>
+<option value="19">19 hours</option>
+<option value="20">20 hours</option>
+<option value="21">21 hours</option>
+<option value="22">22 hours</option>
+<option value="23">23 hours</option>
+<option value="24">24 hours</option>
+		  </select>
+		  <select name="minM" class="textbox" id="minM">
+		  <option value="0">0 minutes</option>
+<option value="10">10 minutes</option>
+<option value="15">15 minutes</option>
+<option value="30">30 minutes</option>
+		  </select>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="formNames">Maximum Reservation Time</td>
+		  <td class="cellColor">
+		  <select name="maxH" class="textbox" id="maxH">
+		  <option value="0">0 hours</option>
+<option value="1">1 hours</option>
+<option value="2">2 hours</option>
+<option value="3">3 hours</option>
+<option value="4">4 hours</option>
+<option value="5">5 hours</option>
+<option value="6">6 hours</option>
+<option value="7">7 hours</option>
+<option value="8">8 hours</option>
+<option value="9">9 hours</option>
+<option value="10">10 hours</option>
+<option value="11">11 hours</option>
+<option value="12">12 hours</option>
+<option value="13">13 hours</option>
+<option value="14">14 hours</option>
+<option value="15">15 hours</option>
+<option value="16">16 hours</option>
+<option value="17">17 hours</option>
+<option value="18">18 hours</option>
+<option value="19">19 hours</option>
+<option value="20">20 hours</option>
+<option value="21">21 hours</option>
+<option value="22">22 hours</option>
+<option value="23">23 hours</option>
+<option value="24" selected="selected">24 hours</option>
+		  </select>
+		  <select name="maxM" class="textbox" id="maxM">
+		  <option value="0">0 minutes</option>
+<option value="10">10 minutes</option>
+<option value="15">15 minutes</option>
+<option value="30">30 minutes</option>
+		  </select>
+		  </td>
+		</tr>
+		<tr style="display:none">
+			<td class="formNames">Minimum Booking Notice</td>
+			<td class="cellColor">
+				<input type="text" name="min_notice_time" id="min_notice_time" class="textbox" size="3" value="0"> hours prior to the start time			</td>
+		</tr>
+		<tr style="display:none">
+			<td class="formNames">Maximum Booking Notice</td>
+			<td class="cellColor">
+				<input type="text" name="max_notice_time" id="max_notice_time" class="textbox" size="3" value="0"> hours from the current time			</td>
+		</tr>
+		<tr style="display:none">
+		  <td class="formNames">Maximum Participant Capacity</td>
+		  <td class="cellColor"><input type="text" name="max_participants" size="3" class="textbox" value="">
+		  * Leave blank for unlimited		  </td>
+		</tr>
+		<tr style="display:none">
+		  <td class="formNames">Auto-assign permission</td>
+		  <td class="cellColor"><input type="checkbox" name="autoassign">
+		  </td>
+		</tr>
+
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+<br>
+<input type="submit" name="submit" value="Add Resource" class="button">
+<input type="hidden" name="get" value="machid">
+<input type="hidden" name="fn" value="addResource">
+ <input type="reset" name="reset" value="Clear" class="button">
+</form>
+		</td>
+	  </tr>
+	</tbody></table>
+		
+	<table width="100%" border="0" cellspacing="0" cellpadding="5" class="mainBorder">
+	  <tbody><tr>
+		<td class="mainBkgrdClr">
+		  <div class="goodbye"><p>
+			<a href="http://localhost:7777/schedulenew/www/index.php?logout=true">Log Out</a>
+			|
+			<a href="http://localhost:7777/schedulenew/www/ctrlpnl.php">Home</a>
+			|
+			<a href="http://localhost:7777/schedulenew/www/admin.php?tool=resources#">Top</a>
+			</p>
+		  </div>
+		</td>
+	  </tr>
+	</tbody></table>
+	
+	
+	
+	</body></html>

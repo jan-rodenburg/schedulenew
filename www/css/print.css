@@ -1,0 +1,22 @@
+/* Janr additions
+/* stylesheet for print */
+/*  
+/*  @media screen and (min-width: 480px) { */
+	@media print {
+    body {
+        background-color: lightgreen;
+		font-family: Helvetica, sans-serif; 
+    }
+/*	table.resources table tr.rowHeaders td, */
+	table.resources table tr td.edit,
+	table.resources table tr td.barcode,
+	table.resources table tr td.status,
+	table.resources table tr td.duplicate,
+	table.resources table tr td.checkbox,
+	table.resources table tr td.delete
+	
+	{
+		background-color: darkgreen;
+		display:none;
+	}
+}

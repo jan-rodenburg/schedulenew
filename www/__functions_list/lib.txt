@@ -1,0 +1,1162 @@
+lib minus PEAR
+Search "function " (1083 hits in 77 files)
+  C:\xampp17\htdocs\schedule\www\lib\AdditionalResource.class.php (10 hits)
+	Line 34: 	function AdditionalResource($resourceid = null) {
+	Line 49: 	function load_by_id() {
+	Line 68: 	function save() {
+	Line 89: 	function &getNewResource() {
+	Line 101: 	function is_valid() {
+	Line 110: 	function get_error() {
+	Line 115: 	function get_id() {
+	Line 119: 	function get_name() {
+	Line 123: 	function get_status() {
+	Line 127:   	function get_number_available() {
+  C:\xampp17\htdocs\schedule\www\lib\Admin.class.php (42 hits)
+	Line 26: 	Tools array has tool name as index, and array of title and function call as value
+	Line 56: 	function AdminClassTest() {
+	Line 67: 	function Admin($tool) {
+	Line 87: 	function is_error() {
+	Line 96: 	function get_error_msg() {
+	Line 105: 	function isUserAllowed() {
+	Line 131: 	* Execute the proper function based on the tool
+	Line 135: 	function execute() {
+	Line 144: 	function manageSchedules() {
+	Line 153: 	function listSchedulesTable() {
+	Line 170: 	function editScheduleTable() {
+	Line 194: 	function manageUsers() {
+	Line 226: 	function manageCoworkers() {
+	Line 257: 	function manageResources() {
+	Line 269: 	function listResourcesTable() {
+	Line 284: 	* function is an extend to function listResourcesTable
+	Line 284: 	* function is an extend to function listResourcesTable
+	Line 288: 	function searchResourcesTable() {
+	Line 308: 	function editResourceTable() {
+	Line 353: 	function managePerms() {
+	Line 383: 	function manageReservations() {
+	Line 431: 	function manageArchive() {
+	Line 465: 	* Wrapper function to call proper email function
+	Line 468: 	function manageEmail() {
+	Line 489: 	function list_email_users() {
+	Line 503: 	function sendMessage() {
+	Line 538: 	* Call the function to show table data or to show the resulting data
+	Line 541: 	function export_data() {
+	Line 580: 	function build_export_query($form, $table_name) {
+	Line 599: 	function get_export_data($query) {
+	Line 613: 	function reset_password() {
+	Line 627: 	function manageAnnouncements() {
+	Line 636: 	function listAnnouncementsTable() {
+	Line 653: 	function editAnnouncementTable() {
+	Line 676:  	function approveReservations() {
+	Line 691:  	function manageAdditionalResources() {
+	Line 700:  	function listAdditionalResources() {
+	Line 717:  	function editAdditionalResources() {
+	Line 737: 	function manageGroups() {
+	Line 746: 	function listGroups() {
+	Line 762: 	function editGroup() {
+	Line 782: 	function res_to_late() 
+  C:\xampp17\htdocs\schedule\www\lib\AnonymousUser.class.php (12 hits)
+	Line 34: 	function AnonymousUser($userid = null) 
+	Line 51: 	function load_by_id() 
+	Line 74: 	function save() 
+	Line 116: 	function &getNewUser() 
+	Line 129: 	function get_id_by_email($email_address) 
+	Line 140: 	function is_valid() 
+	Line 150: 	function get_error() 
+	Line 160: 	function get_id() 
+	Line 170: 	function get_fname() 
+	Line 180: 	function get_lname() 
+	Line 190: 	function get_name() 
+	Line 200: 	function get_email() 
+  C:\xampp17\htdocs\schedule\www\lib\Auth.class.php (31 hits)
+	Line 37: 	function Auth() {
+	Line 43: 	* This function checks to see if the currently
+	Line 49: 	function isAdmin() {
+	Line 70: 	function isScheduleAdmin() {
+	Line 76: 	* This function checks to see if the user has
+	Line 81: 	function is_logged_in() {
+	Line 90: 	function getCurrentID() {
+	Line 104: 	function doLogin($uname, $pass, $cookieVal = null, $isCookie = false, $resume = '', $lang = '') {
+	Line 279: 	function verifyCookie($cookieValue)
+	Line 296: 	function generateCookie($memberid)
+	Line 308: 	function doLogout() {
+	Line 332: 	* This function will allow a new user to register.
+	Line 339: 	function do_register_user($data, $adminCreated) {
+	Line 500: 	function del_user( $id) {
+	Line 519: 	function changeMemberIdSitewide($oudid, $id) {
+	Line 537: 	function update_user_nonactive( $id) {
+	Line 555: 	function do_edit_user($data, $adminUpdate) 
+	Line 610: 	function check_all_values(&$data, $is_edit) {
+	Line 699: 	function isAttempting() {
+	Line 707: 	function kill() {
+	Line 715: 	function clean() {
+	Line 726: 	* Wrapper function to call template 'print_register_form' function
+	Line 732: 	function print_register_form($edit, $data, $msg = '', $id = '') {
+	Line 733: 		print_register_form($edit, $data, $msg, $id);		// Function in auth.template.php
+	Line 738: 	* Wrapper function to call template 'print_registerCoworker_form' function
+	Line 744: 	function print_registerCoworker_form($edit, $data, $msg = '', $id = '') {
+	Line 745: 		print_registerCoworker_form($edit, $data, $msg, $id);		// Function in auth.template.php
+	Line 748: 	* Wrapper function to call template 'printLoginForm' function
+	Line 752: 	function printLoginForm($msg = '', $resume = '') {
+	Line 760: 	function print_login_msg($kill = true) {
+	Line 768: 	function print_success_box() {
+  C:\xampp17\htdocs\schedule\www\lib\Blackout.class.php (1 hit)
+	Line 31: 	function Blackout($id = null, $is_blackout = false, $is_pending = false, $scheduleid = null) {
+  C:\xampp17\htdocs\schedule\www\lib\Calendar.class.php (20 hits)
+	Line 14: * Note: void(0); is needed after the window.open() function if used in a link
+	Line 46:     function Calendar($isPopup = true, $month = null, $year = null, $weekstart = null) {
+	Line 96: 	function setupStyleRules() {
+	Line 103:     * This function prints out the calendar and calls all
+	Line 107:     * (This is the only function that needs to be called
+	Line 111:     function printCalendar() {
+	Line 125: 	function printCalendarBody($today) {
+	Line 196: 	function printJumpForm() {
+	Line 238:     function setBorderColor($color) {
+	Line 247:     function setEmptyDayBGColor($color) {
+	Line 256:     function setFullDayBGColor($color) {
+	Line 267:     function setBoxSize($size) {
+	Line 281:     function setLinkColor($color) {
+	Line 290:     function setLinkHover($color) {
+	Line 299:     function setMonthColor($color) {
+	Line 308:     function setMonthHover($color) {
+	Line 317:     function setSelectBGColor($color) {
+	Line 326:     function setSelectSize($size) {
+	Line 335:     function setSelectTextColor($color) {
+	Line 344:     function setTextSize($size) {
+  C:\xampp17\htdocs\schedule\www\lib\CmnFns.class.php (25 hits)
+	Line 39: 	function janr_debug_box_oud($a,$li,$sa) {
+	Line 71: 	function janr_debug_box($a,$li,$sa) {
+	Line 109: 	function janr_debug_box2($string) {
+	Line 121: 	function do_error_box($msg, $style='', $die = true) {
+	Line 145: function get_cluster_status ($resid, $clusterid){	
+	Line 173: function validate_user ($osiris_ok_now, $demerit_punt){	
+	Line 191: 	function getScriptURL() {
+	Line 199: function makelink ($string, $ellipse=false) {
+	Line 214: 	function do_message_box($msg, $style='') {
+	Line 224: 	function getNewLink() {
+	Line 234: 	function getNewPager() {
+	Line 243: 	function cleanPostVals() {
+	Line 257: 	function cleanVals($data) {
+	Line 271: 	function get_vert_order($get_name = 'vert') {
+	Line 294: 	function get_value_order($orders = array(), $get_name = 'order') {
+	Line 317: 	function br2nl($subject) {
+	Line 327: 	function write_log($string, $userid = NULL, $ip = NULL) {
+	Line 362: 	function get_day_name($day_of_week, $type = 0) {
+	Line 380: 	function redirect($location, $time = 0, $die = true) {
+	Line 389: 	function print_language_pulldown() {
+	Line 415: 	function html_activate_links($str) {
+	Line 425: 	function random_number($i){
+	Line 431: 	function random_hexcolor(){
+	Line 446: 		function random_color(){
+	Line 464: 	function get_repeat_dates($initial_ts, $interval, $days, $until, $frequency, $week_number) {
+  C:\xampp17\htdocs\schedule\www\lib\copycluster.class.php (61 hits)
+	Line 81: 	function Reservation($id = null, $is_blackout = false, $is_pending = false, $scheduleid = null) {
+	Line 102: 	function load_by_id() {
+	Line 158: 	function res_to_late() 
+	Line 210: 	function del_res($del_recur) 
+	Line 252: 	function add_res($users_to_invite = array(), $resources_to_add = array()) 
+	Line 386: 	function mod_res($users_to_invite, $users_to_remove, $unchanged_users, $resources_to_add, $resources_to_remove, $del, $mod_recur) {
+	Line 512: 	function approve_res($mod_recur) {
+	Line 554: 	function print_success($verb, $dates = array()) {
+	Line 574: 	function check_startdate() {
+	Line 624: 	function check_times() {
+	Line 641: 	function check_min_max() {
+	Line 665: 	function check_janrchecks() {
+	Line 742: 	function check_reservation_status($orig_status_res) {
+	Line 811: 	function check_res($resources_to_add) {
+	Line 830: 	function check_res_resource_verlenging() {
+	Line 850: 	function check_res_resource_only() {
+	Line 865: 	function check_perms($kill = true) {
+	Line 889: 	function print_res() {
+	Line 979: 	function print_to_mail_accessories ($resid) {
+	Line 1001: 	function print_to_mail_accessories_tot ($resid) {
+	Line 1024:         * This function sends an email notifiying the user
+	Line 1031:         function send_email($type, $repeat_dates = null, $users_to_inform = null) {
+	Line 1541: 	function invite_users($userinfo, $dates, $accept_code) {
+	Line 1581: 	function remove_users_email($emails, $dates) {
+	Line 1613: 	* This function updates a users reservation status
+	Line 1620: 	function update_users($memberid, $action, $update_all, $max_participants = 0) {
+	Line 1642: 	function add_participant($memberid, $accept_code) {
+	Line 1651: 	function get_type() {
+	Line 1660: 	function get_id() {
+	Line 1669: 	function get_start() {
+	Line 1678: 	function get_end() {
+	Line 1687: 	function get_date() {
+	Line 1696: 	function get_created() {
+	Line 1705: 	function get_modified() {
+	Line 1714: 	function get_machid() {
+	Line 1723: 	function get_uitleennivo() {
+	Line 1732: 	function get_uitleenperiode() {
+	Line 1742: 	function get_pending() {
+	Line 1751: 	function get_memberid() {
+	Line 1760: 	function &get_user() {
+	Line 1771: 	function get_parentid() {
+	Line 1780: 	function get_summary() {
+	Line 1789: 	function get_scheduleid() {
+	Line 1798: 	function get_start_date() {
+	Line 1807: 	function get_end_date() {
+	Line 1815: 	function get_allow_participation() {
+	Line 1822: 		function get_schedule_address($emailadres) {
+	Line 1830: 	function get_allow_anon_participation() {
+	Line 1839: 	function get_checkout_via() {
+	Line 1848: 	function get_checkin_via() {
+	Line 1857: 	function get_reservation_status() {
+	Line 1865: 	function get_contractsoort() {
+	Line 1873: 	function get_clusterid() {
+	Line 1882: 	function is_repeat() {
+	Line 1886: 		function setNewEndDate () {
+	Line 1938: 		function setNewEndTime () {
+	Line 1996: 	function has_errors() {
+	Line 2004: 	function add_error($msg) {
+	Line 2013: 	function get_last_error() {
+	Line 2024: 	function print_all_errors($kill) {
+	Line 2061: 	function set_type($type) {
+  C:\xampp17\htdocs\schedule\www\lib\Database.class.php (11 hits)
+	Line 14: 	function Database(&$dbConnection) {
+	Line 19: 	function setParameters(&$parameters) {
+	Line 32: 	function setCommand($command) {
+	Line 43: 	function &query() {		
+	Line 53: 	function Parameters() { }
+	Line 55: 	function add(&$parameter) {
+	Line 60: 	function remove(&$parameter) {
+	Line 68: 	function removeAt($index) {
+	Line 74: 	function &items($index) {
+	Line 78: 	function count() {
+	Line 88: 	function Parameter($name = '', $value = '') {
+  C:\xampp17\htdocs\schedule\www\lib\db\AdditionalResourceDB.class.php (3 hits)
+	Line 30: 	function get_data($id) {
+	Line 46: 	function create($resource) {
+	Line 64: 	function update($resource) {
+  C:\xampp17\htdocs\schedule\www\lib\db\AdminDB.class.php (49 hits)
+	Line 35: 	function get_all_admin_data(&$pager, $table, $orders, $limit = false) {
+	Line 82: 	function get_reservation_data($pager, $orders, $pending=null, $groupids = null, $hidearchive = false) {
+	Line 196: 	function get_archive_data($pager, $orders, $pending=null, $groupids = null, $hidearchive = false) {
+	Line 305: 	function get_all_resource_data($pager, $orders) {
+	Line 363: 	function get_num_admin_recs($table, $where_clause = null, $where_values = array()) {
+	Line 387: 	function get_num_pending_res() {
+	Line 402: 	function get_num_reservations($groupids) {
+	Line 421: 	function get_reservations($groupids) {
+	Line 441: 	function get_num_archive($groupids) {
+	Line 460: 	function get_archive($groupids) {
+	Line 479: 	function get_schedule_data_admin($adminemail) {
+	Line 498: 	function get_schedule_data($scheduleid) {
+	Line 516: 	function add_schedule($rs) {
+	Line 546: 	function edit_schedule($rs) {
+	Line 574: 	function del_schedule($schedules) {
+	Line 625: 	function set_default_schedule($scheduleid) {
+	Line 641: 	function get_num_user_recs($fname = null, $lname = null, $groupids = array()) {
+	Line 675: 	function search_users(&$pager, $orders, $fname = null, $lname = null, $groupids = array(), $klas) {
+	Line 761: 	function get_resource_data($machid) {
+	Line 781: 	function del_users($users) {
+	Line 838:     function check_exists_resourcexxx($newmachid) {
+	Line 860: 	function add_resource_barkode($rs) {
+	Line 900: 	function add_resource($rs) {
+	Line 944: 	function edit_resource($rs) {
+	Line 996: 	function dup_resource($rs) {
+	Line 1045: 	function del_one_resource($id) {
+	Line 1056: 	function exists_resource($id) {
+	Line 1068: 	function update_reservations($old_id,$new_id)	{
+	Line 1103: 	function del_resource_this_is_deprecated($rs) {
+	Line 1159: 	function del_resource($rs) {
+	Line 1211: 	function tog_resource($machid, $status) {
+	Line 1221: 	function clear_perms($memberid) {
+	Line 1231: 	function set_perms($memberid, $machids) {
+	Line 1253: 	function get_announcement_data($announcementid) {
+	Line 1271: 	function add_announcement($rs) {
+	Line 1289: 	function edit_announcement($rs) {
+	Line 1305: 	function del_announcement($announcements) {
+	Line 1319: 	function get_user_email() {
+	Line 1346: 	function autoassign($machid) {
+	Line 1364: 	function reset_password($memberid, $new_password) {
+	Line 1374: 	function change_admin_status($memberid, $new_status) {
+	Line 1385: 	function add_additional_resource($name, $scheduleid, $number_available) {
+	Line 1401: 	function edit_additional_resource($id, $name, $scheduleid, $number_available) {
+	Line 1410: 	function del_additional_resource($resourceids) {
+	Line 1421: 	function get_all_group_data($pager) {
+	Line 1455: 	function get_group_users($groupid) {
+	Line 1482: 	function add_group($group_name) {
+	Line 1498: 	function edit_group($groupid, $group_name, $adminid) {
+	Line 1526: 	function del_group($groupids) {
+  C:\xampp17\htdocs\schedule\www\lib\db\AnonymousUserDB.class.php (4 hits)
+	Line 26: 	function get_user_data($userid) {
+	Line 43: 	function get_id_by_email($email_address) {
+	Line 60: 	function create(&$user) {
+	Line 80: 	function update(&$user) {
+  C:\xampp17\htdocs\schedule\www\lib\db\AuthDB.class.php (13 hits)
+	Line 29: 	function userExists($uname, $use_logonname = false) {
+	Line 55: 	function isPassword($uname, $pass, $use_logonname = false) {
+	Line 70: 	function insertMember($data) {
+	Line 133: 	function update_user($userid, $data) {
+	Line 193: 	function update_user_coworker($userid, $data) {
+	Line 246: 						// echo ('<br>JANR at function update_user_coworker<br>SQL: ');// test janr
+	Line 257: 	function update_user_nonactiveDB($id) {
+	Line 282: 	function changeMemberIdSitewide($oudid, $id) {
+	Line 310: 	function del_userDB($id) {
+	Line 332: 	function check_updates( $id, $ldap ) {
+	Line 358: 	function verifyID($id) {
+	Line 369: 	function autoassign($id) {
+	Line 377: 	function getPassword($id)
+  C:\xampp17\htdocs\schedule\www\lib\db\BlackoutDB.class.php (4 hits)
+	Line 30: 	function get_blackout($blackoutid) {
+	Line 50: 	function add_blackout(&$blackout, $is_parent) {
+	Line 91: 	function mod_blackout(&$blackout) {
+	Line 128: 	function del_blackout($id, $parentid, $del_recur, $date) {
+  C:\xampp17\htdocs\schedule\www\lib\db\GroupDB.class.php (3 hits)
+	Line 13: 	function getGroup($id) {	
+	Line 34: 	function getGroups() {
+	Line 56: 	function getExcludedGroups($excluded_memberid) {
+  C:\xampp17\htdocs\schedule\www\lib\db\MyCalendarDB.class.php (3 hits)
+	Line 23: 	function MyCalendarDB() {
+	Line 29: 	* This function gets all reservation data
+	Line 39: 	function get_all_reservations($firstDate, $lastDate, $userid, $filterFirst, $filterLast) {
+  C:\xampp17\htdocs\schedule\www\lib\db\ReminderDB.class.php (5 hits)
+	Line 26: 	function getReminders($max_date) {
+	Line 55: 	function save(&$reminder) {
+	Line 68: 	function update(&$reminder) {
+	Line 81: 	function delete($memberid, $resid) {
+	Line 94: 	function _buildReminder($row) {
+  C:\xampp17\htdocs\schedule\www\lib\db\ResCalendarDB.class.php (5 hits)
+	Line 23: 	function ResCalendarDB() {
+	Line 29: 	* This function gets all reservation data
+	Line 37: 	function get_all_reservations($firstDate, $lastDate, $id, $is_resource, $filterFirst, $filterLast) {
+	Line 87: 	function get_resources() {
+	Line 111: 	function get_schedules() {
+  C:\xampp17\htdocs\schedule\www\lib\db\ResDB.class.php (29 hits)
+	Line 27: 	function get_resource_data($machid) {
+	Line 46: 	function get_reservation($resid, $memberid) {
+	Line 69: 	function check_res($res) {
+	Line 119: 	function check_res_verlenging($res) {
+	Line 170: 	function checkAdditionalResources($res, $resources_to_add) {
+	Line 248: 	function add_res($res, $is_parent, $users_to_invite, $resources_to_add, $accept_code) {
+	Line 317: 	function add_res_copycluster($res, $is_parent, $users_to_invite, $resources_to_add, $accept_code,$id) {
+	Line 387: 	function add_res_copycluster_slave($res, $is_parent, $users_to_invite, $resources_to_add, $accept_code,$newmachid) {
+	Line 464: 	function mod_res($res, $users_to_invite, $users_to_remove, $resources_to_add, $resources_to_remove, $accept_code) {
+	Line 594: 	function mod_res_cluster_readyall(&$res) {
+	Line 623: 	function mod_res_cluster($res, $users_to_invite, $users_to_remove, $resources_to_add, $resources_to_remove, $accept_code) {
+	Line 704: 	function mod_res_cluster_upd_status($res, $users_to_invite, $users_to_remove, $resources_to_add, $resources_to_remove, $accept_code,$oldstatus) {
+	Line 843: 	function mod_res_OUD($res, $users_to_invite, $users_to_remove, $resources_to_add, $resources_to_remove, $accept_code) {
+	Line 979: 	* If this reservation is master of a cluster see , FUNCTION DEL_RES_CLUSTER
+	Line 988: 	function del_res($id, $parentid, $del_recur, $date, $memberid) {
+	Line 1039: 	function get_res_cluster($id, $clusterid) {
+	Line 1064: 	function del_res_cluster($id, $clusterid, $del_master, $date, $memberid) {
+	Line 1092: 	function approve_res(&$res, $mod_recur) {
+	Line 1116: 	function get_email_info($id) {
+	Line 1135: 	function get_recur_ids($parentid, $start_date) {
+	Line 1166: 	function get_res_users($resid) {
+	Line 1199: 	function get_reservation_clusterdata($clusterid) {
+	Line 1239: 	function get_cluster_resids($clusterid) {
+	Line 1278: 	function confirm_user($memberid, $resid, $parentid, $update_all, $max_participants = 0) {
+	Line 1324: 	function remove_user($memberid, $resid, $parentid, $update_all) {
+	Line 1351: 	function add_participant($memberid, $resid, $accept_code) {		
+	Line 1365: 	function get_sup_resources($resid) {
+	Line 1391: 	function get_non_participating_resources($resid) {
+	Line 1443: 	function get_non_participating_users($resid, $cur_user_id) {
+  C:\xampp17\htdocs\schedule\www\lib\db\ReservationSearchDB.class.php (1 hit)
+	Line 18: 	function getReservations($userid, $start, $end) {
+  C:\xampp17\htdocs\schedule\www\lib\db\ResourceDB.class.php (2 hits)
+	Line 27: 	function get_property($property_name, $machid) {
+	Line 37: 	function get_all_properties($machid) {
+  C:\xampp17\htdocs\schedule\www\lib\db\ScheduleDB.class.php (3 hits)
+	Line 34: 	function ScheduleDB($scheduleid, $scheduleType) {
+	Line 42: 	* This function gets all reservation data
+	Line 51: 	function get_all_res($start_date, $end_date, $machids, $current_memberid = null) {
+  C:\xampp17\htdocs\schedule\www\lib\db\SelectUserDB.class.php (3 hits)
+	Line 28: 	function SelectUserDB() {
+	Line 34: 	* This function gets all reservation data
+	Line 42: 	function get_all_reservations($firstDate, $lastDate, $userid) {
+  C:\xampp17\htdocs\schedule\www\lib\db\StatsDB.class.php (3 hits)
+	Line 30: 	function get_quick_stats($table) {
+	Line 54: 	function get_all_stats() {
+	Line 85: 	function get_resources() {
+  C:\xampp17\htdocs\schedule\www\lib\db\tempie2.php (1 hit)
+	Line 1: 		function setNewEndDateandTime ($res) {
+  C:\xampp17\htdocs\schedule\www\lib\db\UsageDB.class.php (3 hits)
+	Line 29: 	function get_min_max() {
+	Line 76: 	function get_reservations($scheduleids, $memberids, $machids, $startDateMin, $startDateMax, $endDateMin, $endDateMax, $starttimeMin, $starttimeMax, $endtimeMin, $endtimeMax, $summarysearch, $searchtype) {
+	Line 230: 	function get_resource_times($machids) {
+  C:\xampp17\htdocs\schedule\www\lib\db\UserDB.class.php (10 hits)
+	Line 26: 	function get_user_data($userid) {
+	Line 45: 	function get_user_perms($userid) {
+	Line 64: 	function get_emails($userid) {
+	Line 84:     function set_emails($e_add, $e_mod, $e_del, $e_app, $e_html, $userid) {
+	Line 101: 	function set_password($new_password, $userid) {
+	Line 116: 	function get_id_by_email($email_address) 
+	Line 137: 	function get_user_groups($userid) {
+	Line 161: 	function add_groups($memberid, $groups) {
+	Line 181: 	function remove_groups($memberid, $groups) {
+	Line 195: 	function set_lang($memberid, $lang) {
+  C:\xampp17\htdocs\schedule\www\lib\db\UserInfoDB.class.php (2 hits)
+	Line 31: 	function get_prev_userid(&$user) {
+	Line 54: 	function get_next_userid(&$user) {
+  C:\xampp17\htdocs\schedule\www\lib\DBConnection.class.php (21 hits)
+	Line 24: 	function IDbConnection($dbType, $dbUser, $dbPassword, $hostSpec, $dbNames = array()) { }
+	Line 29: 	function connect($safeMode = false) { }
+	Line 34: 	function disconnect() { }
+	Line 41: 	function setCommand($command) { }
+	Line 49: 	function addParameter($name, $value) { }
+	Line 57: 	function &query() { } 
+	Line 64: 	function &execute() { }
+	Line 74: 	function Reader() { }
+	Line 80: 	function &getRow() { }
+	Line 86: 	function numRows() { }
+	Line 105: 	function PearDbConnection($dbType, $dbUser, $dbPassword, $hostSpec, $dbNames = array()) {
+	Line 113: 	function connect($safeMode = false) {
+	Line 140: 	function disconnect() {
+	Line 144: 	function setCommand($command) {
+	Line 148: 	function addParameter($name, $value) {
+	Line 152: 	function &query() {
+	Line 158: 	function &execute() {
+	Line 164: 	function _checkForError($result) {
+	Line 179: 	function PearReader(&$DB_result) {
+	Line 183: 	function &getRow() {
+	Line 187: 	function numRows() {
+  C:\xampp17\htdocs\schedule\www\lib\DBEngine.class.php (25 hits)
+	Line 48:     function DBEngine() 
+	Line 62:     function db_connect() 
+	Line 105:     function define_tables() 
+	Line 124:     function get_table($table) 
+	Line 136:     function get_table_for_export($table) 
+	Line 148:     function set_table($table, $database) 
+	Line 171:     function get_table_data($table, $fields = array('*'), $orders = array(), $limit = NULL, $offset = NULL, $where_clause = NULL, $where_values = array()) {
+	Line 226:     function deleteRecords($table, $field, $to_delete) 
+	Line 252:     function get_user_reservations($id, $order, $vert, $include_participating = false) 
+	Line 304:     function get_user_permissions($userid) {
+	Line 334:     * This function loops through all resources
+	Line 341:     function get_mach_ids($scheduleid = null) {
+	Line 375:     function get_default_id() {
+	Line 392:     function check_scheduleid($scheduleid) {
+	Line 405:     function get_schedule_data($scheduleid) {
+	Line 416:     function get_schedule_list() {
+	Line 434:     function get_announcements($datetime) {
+	Line 472:     function get_user_invitations($id, $invited_only = true) {
+	Line 519:     function check_for_error($result) {
+	Line 537:     function get_new_id($prefix = '') {
+	Line 553:     function make_password($pass) {
+	Line 563:     function cleanRow($data) {
+	Line 576:     function make_del_list($data) {
+	Line 586: 	function make_in_list($data) {
+	Line 595:     function get_err() {
+  C:\xampp17\htdocs\schedule\www\lib\DBEngine.class.xampp.php (24 hits)
+	Line 48:     function DBEngine() 
+	Line 62:     function db_connect() 
+	Line 104:     function define_tables() 
+	Line 123:     function get_table($table) 
+	Line 136:     function set_table($table, $database) 
+	Line 159:     function get_table_data($table, $fields = array('*'), $orders = array(), $limit = NULL, $offset = NULL, $where_clause = NULL, $where_values = array()) {
+	Line 212:     function deleteRecords($table, $field, $to_delete) 
+	Line 238:     function get_user_reservations($id, $order, $vert, $include_participating = false) 
+	Line 290:     function get_user_permissions($userid) {
+	Line 320:     * This function loops through all resources
+	Line 327:     function get_mach_ids($scheduleid = null) {
+	Line 361:     function get_default_id() {
+	Line 378:     function check_scheduleid($scheduleid) {
+	Line 391:     function get_schedule_data($scheduleid) {
+	Line 402:     function get_schedule_list() {
+	Line 420:     function get_announcements($datetime) {
+	Line 458:     function get_user_invitations($id, $invited_only = true) {
+	Line 505:     function check_for_error($result) {
+	Line 520:     function get_new_id($prefix = '') {
+	Line 536:     function make_password($pass) {
+	Line 546:     function cleanRow($data) {
+	Line 559:     function make_del_list($data) {
+	Line 569: 	function make_in_list($data) {
+	Line 578:     function get_err() {
+  C:\xampp17\htdocs\schedule\www\lib\Group.class.php (2 hits)
+	Line 21: 	function Group($data = null, $id = null) {
+	Line 38: 	function getGroups($excluded_memberid = null) {
+  C:\xampp17\htdocs\schedule\www\lib\helpers\ReservationHelper.class.php (4 hits)
+	Line 13: 	function ReservationHelper() { }
+	Line 21: 	function getRowsForInvitation($orig, $invited) {
+	Line 46: 	function getRowsForRemoval($orig, $removed, $invited) {
+	Line 74: 	function getUnchangedUsers($orig, $invited, $participating) {
+  C:\xampp17\htdocs\schedule\www\lib\helpers\StringBuilder.class.php (2 hits)
+	Line 10: 	function append($string) {
+	Line 19: 	function toString() {
+  C:\xampp17\htdocs\schedule\www\lib\icalendar\ICalExport.php (5 hits)
+	Line 18: 	function ICalExport(&$reservations) {
+	Line 23: 	function _parse() {
+	Line 34: 	function toString() {
+	Line 43: 	function getHeader() {
+	Line 48: 	function getFooter() {
+  C:\xampp17\htdocs\schedule\www\lib\icalendar\ICalReservationFormatter.php (9 hits)
+	Line 20: 	function ICalReservationFormatter() {
+	Line 24: 	function setReservation(&$reservation) {
+	Line 28: 	function format() {
+	Line 43: 	function formatSettings() {
+	Line 90: 	function formatOwner() {
+	Line 98: 	function formatParticipants() {
+	Line 108: 	function formatSummary() {
+	Line 117: 	function formatReminder() {
+	Line 130: 	function formatResources() {
+  C:\xampp17\htdocs\schedule\www\lib\ImportOsirisUser.class.php (38 hits)
+	Line 42: 	function User($userid = null) {		
+	Line 57: 	function load_by_id() {
+	Line 119: 	function get_id_by_email($email_address) 
+	Line 133: 	function _get_perms() {
+	Line 143: 	function has_perm($machid) {
+	Line 153: 	function _get_emails() {	
+	Line 164: 	function _get_groups() {
+	Line 173: 	function get_groups() {
+	Line 186: 	function get_groupids() {
+	Line 199: 	function get_admin_groups() {
+	Line 219: 	function get_perms() {
+	Line 232: 	function wants_email($type) {
+	Line 241: 	function wants_html() {
+	Line 253: 	function set_emails($e_add, $e_mod, $e_del, $e_app, $e_html) {
+	Line 262: 	function get_user_data() {
+	Line 297: 	function set_password($new_password) {
+	Line 305: 	function add_groups($groups) {
+	Line 314: 	function remove_groups($groups) {
+	Line 324: 	function is_valid() {
+	Line 333: 	function is_group_admin($groupids = null)
+	Line 364: 	function is_schedule_admin($scheduleid = null) {
+	Line 377: 	function set_lang($lang) {
+	Line 386: 	function get_error() {
+	Line 390: 	function get_id() {
+	Line 394: 	function get_fname() {
+	Line 398: 	function get_lname() {
+	Line 402: 	function get_name() {
+	Line 406: 	function get_email() {
+	Line 415: 	function get_email2() {
+	Line 423: 	function get_phone() {
+	Line 427: 	function get_inst() {
+	Line 431: 	function get_position() {
+	Line 435: 	function get_isadmin() {
+	Line 438: 	function get_isscheduleadmin() {
+	Line 442: 	function get_administrated_schedules() {
+	Line 446: 	function get_logon_name() {
+	Line 450: 	function get_lang() {
+	Line 454: 	function get_timezone() {
+  C:\xampp17\htdocs\schedule\www\lib\interfaces\IEmail.php (8 hits)
+	Line 19: 	function send() {
+	Line 23: 	function addAddress($address, $name = '') {
+	Line 27: 	function addCC($address, $name = '') {
+	Line 31: 	function addBCC($address, $name = '') {
+	Line 35: 	function isHTML($isHtml = false) {
+	Line 39: 	function setFrom($address, $name = '') {
+	Line 43: 	function setSubject($subject) {
+	Line 47: 	function setBody($body) {
+  C:\xampp17\htdocs\schedule\www\lib\interfaces\IReservationExport.php (3 hits)
+	Line 17: 	function toString() {
+	Line 21: 	function getHeader() {
+	Line 25: 	function getFooter() {
+  C:\xampp17\htdocs\schedule\www\lib\interfaces\IReservationFormatter.php (8 hits)
+	Line 22: 	function setReservation(&$reservation) {
+	Line 30: 	function format() {
+	Line 34: 	function formatSettings() {
+	Line 38: 	function formatOwner() {
+	Line 42: 	function formatParticipants() {
+	Line 46: 	function formatSummary() {
+	Line 50: 	function formatReminder() {
+	Line 54: 	function formatResources() {
+  C:\xampp17\htdocs\schedule\www\lib\LDAPEngine.class.php (6 hits)
+	Line 46: 	function LDAPEngine( $uid, $password ) {
+	Line 114:     function disconnect() {
+	Line 125: 	function loadUserData() {
+	Line 160:     function getUserData() {
+	Line 187: 	function getUserEmail( ) {
+	Line 195: 	function connected( ) {
+  C:\xampp17\htdocs\schedule\www\lib\Link.class.php (20 hits)
+	Line 32: 	function Link($url=null, $text=null, $class=null, $style=null, $text_on_over=null) {
+	Line 47: 	function setUrl($url) {
+	Line 55: 	function setText($text) {
+	Line 63: 	function setClass($class) {
+	Line 71: 	function setStyle($style) {
+	Line 79: 	function setTextOnOver($text_on_over) {
+	Line 87: 	function setImgSrc($img_src) {
+	Line 95: 	function setImgAlt($img_alt) {
+	Line 109: 	function getUrl() {
+	Line 117: 	function getText() {
+	Line 125: 	function getClass() {
+	Line 133: 	function getStyle() {
+	Line 141: 	function getTextOnOver() {
+	Line 149: 	function getImgSrc() {
+	Line 157: 	function getImgAlt() {
+	Line 172: 	function doLink($url=null, $text=null, $class=null, $style=null, $text_on_over=null) {
+	Line 183: 	function doImageLink($url = null, $img_src = null, $alt = null, $text_on_over = null) {
+	Line 192: 	function printLink() {
+	Line 205: 	function getLink($url=null, $text=null, $class=null, $style=null, $text_on_over=null) {
+	Line 225: 	function getImageLink($url = null, $img_src = null, $alt = null, $text_on_over = null) {
+  C:\xampp17\htdocs\schedule\www\lib\MyCalendar.class.php (7 hits)
+	Line 38: 	function MyCalendar($userid, $type = null, $actualDate = null, $load_reservations = true) {
+	Line 53: 	* Calls the appropriate function to load the reservations fitting this calendar data
+	Line 56: 	function load_reservations() {
+	Line 78: 	function print_calendar() {
+	Line 101: 	function print_calendars($javascript) {
+	Line 119: 	function determine_first_date() {
+	Line 145: 	function init_date_vars() {
+  C:\xampp17\htdocs\schedule\www\lib\pagebase\download\DownloadPage.php (2 hits)
+	Line 20: 	function printHeaders() {
+	Line 29: 	function download() {
+  C:\xampp17\htdocs\schedule\www\lib\pagebase\download\FileDownload.php (1 hit)
+	Line 22: 	function FileDownload($filename, $path, $file) {
+  C:\xampp17\htdocs\schedule\www\lib\pagebase\download\StreamDownload.php (1 hit)
+	Line 23: 	function StreamDownload($filename, $string) {
+  C:\xampp17\htdocs\schedule\www\lib\pagebase\download\streams\FileDownloadStream.php (3 hits)
+	Line 23: 	function FileDownloadStream($path, $file) {
+	Line 32: 	function getSize() {
+	Line 36: 	function download() {
+  C:\xampp17\htdocs\schedule\www\lib\pagebase\download\streams\IDownloadStream.php (2 hits)
+	Line 18: 	function download() {
+	Line 27: 	function getSize() {
+  C:\xampp17\htdocs\schedule\www\lib\pagebase\download\streams\StringDownloadStream.php (3 hits)
+	Line 22: 	function StringDownloadStream($string) {
+	Line 26: 	function getSize() {
+	Line 30: 	function download() {
+  C:\xampp17\htdocs\schedule\www\lib\pagebase\Page.php (1 hit)
+	Line 14: 	function printHeaders() {
+  C:\xampp17\htdocs\schedule\www\lib\Pager.class.php (45 hits)
+	Line 18: * + Warning - The printPages() function cannot be called
+	Line 93: 	//function Pager($tot_records=0, $limit=25, $page_var='page', $limit_var='limit') {
+	Line 94: 	function Pager($tot_records=0, $limit=10000, $page_var='page', $limit_var='limit') {
+	Line 117: 	*  before this function can be called
+	Line 131: 	function printPages() {
+	Line 201: 	function initCurPage() {
+	Line 209: 	function initLimit() {
+	Line 221: 	* setLimit() must be called before this function for it to work correctly
+	Line 224: 	function initQueryString() {
+	Line 243: 	*  this function can be called
+	Line 247: 	function initTotPages() {
+	Line 259: 	function printPage($p) {
+	Line 272: 	function printPrev() {
+	Line 282: 	function printNext() {
+	Line 293: 	function printLink($page, $text) {
+	Line 318: 	function startTable() {
+	Line 327: 	function startPagesCell() {
+	Line 335: 	function endPagesCell() {
+	Line 343: 	function printLimitCell() {
+	Line 364: 	function endTable() {
+	Line 372: 	function printTotal() {
+	Line 387: 	function setTotRecords($tot) {
+	Line 402: 	function setLimit($limit) {
+	Line 415: 	function setPrevLink($text) {
+	Line 426: 	function setNextLink($text) {
+	Line 439: 	function setViewPages($view_page) {
+	Line 452: 	function setLimits($new_limits) {
+	Line 463: 	function setLinkClass($link_class) {
+	Line 474: 	function setTbClass($tb_class) {
+	Line 485: 	function setTbStyle($tb_style) {
+	Line 498: 	function setTextClass($text_class) {
+	Line 511: 	function setTextStyle($text_style) {
+	Line 522: 	function setTableWidth($table_width) {
+	Line 533: 	function setTableAlign($table_align) {
+	Line 541: 	function setPageVar($page_var) {
+	Line 549: 	function setLimitVar($limit_var) {
+	Line 557: 	function setViewLimitSelect($view_limit_select) {
+	Line 570: 	function getOffset() {
+	Line 579: 	function getTotPages() {
+	Line 588: 	function getPageNum() {
+	Line 597: 	function getLimit() {
+	Line 606: 	function getPrevLink() {
+	Line 615: 	function getNextLink() {
+	Line 624: 	function getPageVar() {
+	Line 633: 	function getLimitVar() {
+  C:\xampp17\htdocs\schedule\www\lib\PHPMailer.class.NIEUW.php (120 hits)
+	Line 423:      * Callback Action function name.
+	Line 425:      * The function that handles the result of the send email action.
+	Line 440:     public $action_function = '';
+	Line 637:     public function __construct($exceptions = false)
+	Line 645:     public function __destruct()
+	Line 666:     private function mailPassthru($to, $subject, $body, $header, $params)
+	Line 668:         //Check overloading of mail function to avoid double-encoding
+	Line 689:     protected function edebug($str)
+	Line 694:         //Avoid clash with built-in function names
+	Line 730:     public function isHTML($isHtml = true)
+	Line 743:     public function isSMTP()
+	Line 752:     public function isMail()
+	Line 761:     public function isSendmail()
+	Line 777:     public function isQmail()
+	Line 795:     public function addAddress($address, $name = '')
+	Line 802:      * @note: This function works with the SMTP mailer on win32, not with the "mail" mailer.
+	Line 807:     public function addCC($address, $name = '')
+	Line 814:      * @note: This function works with the SMTP mailer on win32, not with the "mail" mailer.
+	Line 819:     public function addBCC($address, $name = '')
+	Line 830:     public function addReplyTo($address, $name = '')
+	Line 847:     protected function addOrEnqueueAnAddress($kind, $address, $name)
+	Line 891:     protected function addAnAddress($kind, $address, $name = '')
+	Line 929:      * Uses the imap_rfc822_parse_adrlist function if the IMAP extension is available.
+	Line 936:     public function parseAddresses($addrstr, $useimap = true)
+	Line 989:     public function setFrom($address, $name = '', $auto = true)
+	Line 1022:     public function getLastMessageID()
+	Line 1041:     public static function validateAddress($address, $patternselect = 'auto')
+	Line 1127:     public function idnSupported()
+	Line 1129:         // @TODO: Write our own "idn_to_ascii" function for PHP <= 5.2.
+	Line 1136:      * This function silently returns unmodified address if:
+	Line 1144:     public function punyencodeAddress($address)
+	Line 1170:     public function send()
+	Line 1192:     public function preSend()
+	Line 1287:     public function postSend()
+	Line 1326:     protected function sendmailSend($header, $body)
+	Line 1395:     protected function mailSend($header, $body)
+	Line 1433:      * Override this function to load your own SMTP implementation
+	Line 1436:     public function getSMTPInstance()
+	Line 1456:     protected function smtpSend($header, $body)
+	Line 1519:     public function smtpConnect($options = array())
+	Line 1631:     public function smtpClose()
+	Line 1650:     public function setLanguage($langcode = 'en', $lang_path = '')
+	Line 1699:     public function getTranslations()
+	Line 1714:     public function addrAppend($type, $addr)
+	Line 1730:     public function addrFormat($addr)
+	Line 1752:     public function wrapText($message, $length, $qp_mode = false)
+	Line 1851:     public function utf8CharBoundary($encodedText, $maxLength)
+	Line 1896:     public function setWordWrap()
+	Line 1920:     public function createHeader()
+	Line 2016:     public function getMailMIME()
+	Line 2071:     public function getSentMIMEMessage()
+	Line 2083:     public function createBody()
+	Line 2293:     protected function getBoundary($boundary, $charSet, $contentType, $encoding)
+	Line 2323:     protected function endBoundary($boundary)
+	Line 2335:     protected function setMessageType()
+	Line 2360:     public function headerLine($name, $value)
+	Line 2371:     public function textLine($value)
+	Line 2387:     public function addAttachment($path, $name = '', $encoding = 'base64', $type = '', $disposition = 'attachment')
+	Line 2430:     public function getAttachments()
+	Line 2443:     protected function attachAll($disposition_type, $boundary)
+	Line 2568:     protected function encodeFile($path, $encoding = 'base64')
+	Line 2609:     public function encodeString($str, $encoding = 'base64')
+	Line 2645:     public function encodeHeader($str, $position = 'text')
+	Line 2682:                 // Use a custom function which correctly encodes and wraps long
+	Line 2709:     public function hasMultiBytes($str)
+	Line 2723:     public function has8bitChars($text)
+	Line 2731:      * Adapted from a function by paravoid
+	Line 2738:     public function base64EncodeWrapMB($str, $linebreak = null)
+	Line 2780:     public function encodeQP($string, $line_max = 76)
+	Line 2782:         // Use native function if it's available (>= PHP5.3)
+	Line 2796:      * Backward compatibility wrapper for an old QP encoding function that was removed.
+	Line 2805:     public function encodeQPphp(
+	Line 2821:     public function encodeQ($str, $position = 'text')
+	Line 2872:     public function addStringAttachment(
+	Line 2912:     public function addEmbeddedImage($path, $cid, $name = '', $encoding = 'base64', $type = '', $disposition = 'inline')
+	Line 2957:     public function addStringEmbeddedImage(
+	Line 2989:     public function inlineImageExists()
+	Line 3003:     public function attachmentExists()
+	Line 3017:     public function alternativeExists()
+	Line 3028:     protected function clearQueuedAddresses($kind)
+	Line 3040:                 function ($params) use ($kind) {
+	Line 3050:     public function clearAddresses()
+	Line 3063:     public function clearCCs()
+	Line 3076:     public function clearBCCs()
+	Line 3089:     public function clearReplyTos()
+	Line 3099:     public function clearAllRecipients()
+	Line 3112:     public function clearAttachments()
+	Line 3121:     public function clearCustomHeaders()
+	Line 3132:     protected function setError($msg)
+	Line 3159:     public static function rfcDate()
+	Line 3173:     protected function serverHostname()
+	Line 3194:     protected function lang($key)
+	Line 3219:     public function isError()
+	Line 3231:     public function fixEOL($str)
+	Line 3251:     public function addCustomHeader($name, $value = null)
+	Line 3265:     public function getCustomHeaders()
+	Line 3282:     public function msgHTML($message, $basedir = '', $advanced = false)
+	Line 3349:      * Note - older versions of this function used a bundled advanced converter
+	Line 3366:     public function html2text($html, $advanced = false)
+	Line 3385:     public static function _mime_types($ext = '')
+	Line 3500:     public static function filenameToType($filename)
+	Line 3522:     public static function mb_pathinfo($path, $options = null)
+	Line 3560:      * You should avoid this function - it's more verbose, less efficient, more error-prone and
+	Line 3572:     public function set($name, $value = '')
+	Line 3589:     public function secureHeader($str)
+	Line 3604:     public static function normalizeBreaks($text, $breaktype = "\r\n")
+	Line 3617:     public function sign($cert_filename, $key_filename, $key_pass, $extracerts_filename = '')
+	Line 3631:     public function DKIM_QP($txt)
+	Line 3652:     public function DKIM_Sign($signHeader)
+	Line 3678:     public function DKIM_HeaderC($signHeader)
+	Line 3698:     public function DKIM_BodyC($body)
+	Line 3721:     public function DKIM_Add($headers_line, $subject, $body)
+	Line 3792:     public static function hasLineLongerThanMax($str)
+	Line 3804:     public function getToAddresses()
+	Line 3815:     public function getCcAddresses()
+	Line 3826:     public function getBccAddresses()
+	Line 3837:     public function getReplyToAddresses()
+	Line 3848:     public function getAllRecipientAddresses()
+	Line 3863:     protected function doCallback($isSent, $to, $cc, $bcc, $subject, $body, $from)
+	Line 3882:     public function errorMessage()
+  C:\xampp17\htdocs\schedule\www\lib\PHPMailer.class.php (56 hits)
+	Line 189:      *  Sets the SMTP server timeout in seconds. This function will not 
+	Line 234:    	function PHPMailer() {
+	Line 265:     function IsHTML($bool) {
+	Line 276:     function IsSMTP() {
+	Line 284:     function IsMail() {
+	Line 292:     function IsSendmail() {
+	Line 300:     function IsQmail() {
+	Line 316:     function AddAddress($address, $name = "") {
+	Line 323:      * Adds a "Cc" address. Note: this function works
+	Line 330:     function AddCC($address, $name = "") {
+	Line 337:      * Adds a "Bcc" address. Note: this function works
+	Line 344:     function AddBCC($address, $name = "") {
+	Line 356:     function AddReplyTo($address, $name = "") {
+	Line 373:     function Send() {
+	Line 428:     function SendmailSend($header, $body) {
+	Line 458:     function MailSend($header, $body) {
+	Line 496:     function SmtpSend($header, $body) {
+	Line 563:     function SmtpConnect() {
+	Line 613:     function SmtpClose() {
+	Line 630:     function SetLanguage() {
+	Line 665:     function AddrAppend($type, $addr) {
+	Line 683:     function AddrFormat($addr) {
+	Line 702:     function WrapText($message, $length, $qp_mode = false) {
+	Line 780:     function SetWordWrap() {
+	Line 802:     function CreateHeader() {
+	Line 900:     function CreateBody() {
+	Line 966:     function GetBoundary($boundary, $charSet, $contentType, $encoding) {
+	Line 986:     function EndBoundary($boundary) {
+	Line 995:     function SetMessageType() {
+	Line 1014:     function HeaderLine($name, $value) {
+	Line 1023:     function TextLine($value) {
+	Line 1041:     function AddAttachment($path, $name = "", $encoding = "base64", 
+	Line 1072:     function AttachAll() {
+	Line 1129:     function EncodeFile ($path, $encoding = "base64") {
+	Line 1148:     function EncodeString ($str, $encoding = "base64") {
+	Line 1179:     function EncodeHeader ($str, $position = 'text') {
+	Line 1232:     function EncodeQP ($str) {
+	Line 1255:     function EncodeQ ($str, $position = "text") {
+	Line 1289:     function AddStringAttachment($string, $filename, $encoding = "base64", 
+	Line 1316:     function AddEmbeddedImage($path, $cid, $name = "", $encoding = "base64", 
+	Line 1348:     function InlineImageExists() {
+	Line 1370:     function ClearAddresses() {
+	Line 1378:     function ClearCCs() {
+	Line 1386:     function ClearBCCs() {
+	Line 1394:     function ClearReplyTos() {
+	Line 1403:     function ClearAllRecipients() {
+	Line 1414:     function ClearAttachments() {
+	Line 1422:     function ClearCustomHeaders() {
+	Line 1437:     function SetError($msg) {
+	Line 1447:     function RFCDate() {
+	Line 1464:     function ServerVar($varName) {
+	Line 1486:     function ServerHostname() {
+	Line 1502:     function Lang($key) {
+	Line 1516:     function IsError() {
+	Line 1525:     function FixEOL($str) {
+	Line 1536:     function AddCustomHeader($custom_header) {
+  C:\xampp17\htdocs\schedule\www\lib\Print.class.php (33 hits)
+	Line 81: 	function Reservation($id = null, $is_blackout = false, $is_pending = false, $scheduleid = null) {
+	Line 103: 	function load_by_id() {
+	Line 165: 	function resxxx_to_late() 
+	Line 188: 	function print_res() {
+	Line 252: 	function get_id() {
+	Line 261: 	function get_start() {
+	Line 270: 	function get_end() {
+	Line 279: 	function get_date() {
+	Line 288: 	function get_created() {
+	Line 297: 	function get_modified() {
+	Line 306: 	function get_machid() {
+	Line 315: 	function get_pending() {
+	Line 324: 	function get_memberid() {
+	Line 333: 	function &get_user() {
+	Line 344: 	function get_parentid() {
+	Line 353: 	function get_summary() {
+	Line 362: 	function get_scheduleid() {
+	Line 371: 	function get_start_date() {
+	Line 380: 	function get_end_date() {
+	Line 388: 	function get_allow_participation() {
+	Line 396: 	function get_allow_anon_participation() {
+	Line 405: 	function get_checkout_via() {
+	Line 414: 	function get_checkin_via() {
+	Line 423: 	function get_reservation_status() {
+	Line 431: 	function get_contractsoort() {
+	Line 439: 	function get_clusterid() {
+	Line 448: 	function is_repeat() {
+	Line 457: 	function has_errors() {
+	Line 465: 	function add_error($msg) {
+	Line 474: 	function get_last_error() {
+	Line 485: 	function print_all_errors($kill) {
+	Line 499: 	function get_type() {
+	Line 506: 	function set_type($type) {
+  C:\xampp17\htdocs\schedule\www\lib\Reminder.class.php (12 hits)
+	Line 40: 	function Reminder($id = null) {
+	Line 48: 	function setDB(&$db) {
+	Line 57: 	function getReminders($max_date) {
+	Line 65: 	function deleteReminders($reminder_ids = array()) {
+	Line 74: 	function deleteReminder($resid, $memberid) {
+	Line 83: 	function save(&$res, $number_of_minutes) {
+	Line 95: 	function update(&$res, $number_of_minutes) {
+	Line 110: 	function getMinutuesPrior(&$res) {
+	Line 136: 	function _calculateReminderTime($start_date, $start_time, $number_of_minutes) {
+	Line 146: 	function toDateTime() {
+	Line 156: 	* Setter function for reminder_time
+	Line 159: 	function set_reminder_time($time) {
+  C:\xampp17\htdocs\schedule\www\lib\ReminderEmail.class.php (12 hits)
+	Line 22: 	function ReminderEmail(&$mailer) {
+	Line 26: 	function send() {
+	Line 30: 	function addAddress($address, $name = '') {
+	Line 34: 	function addCC($address, $name = '') {
+	Line 38: 	function addBCC($address, $name = '') {
+	Line 42: 	function isHTML($isHtml = false) {
+	Line 46: 	function setFrom($address, $name = '') {
+	Line 51: 	function setSubject($subject) {
+	Line 55: 	function setBody($body) {
+	Line 59: 	function buildFromReminder($reminder) {
+	Line 69: 	function _buildSubject($reminder) {
+	Line 82: 	function _buildBody($reminder) {
+  C:\xampp17\htdocs\schedule\www\lib\ResCalendar.class.php (4 hits)
+	Line 41: 	function ResCalendar($userid = null, $type = null, $actualDate = null, $machid = null, $scheduleid = null) 
+	Line 103: 	* Calls the appropriate function to load the reservations fitting this calendar data
+	Line 106: 	function load_reservations() 
+	Line 130: 	function print_calendar() 
+  C:\xampp17\htdocs\schedule\www\lib\Reservation.class.php (64 hits)
+	Line 80: 	function Reservation($id = null, $is_blackout = false, $is_pending = false, $scheduleid = null) {
+	Line 101: 	function load_by_id() {
+	Line 157: 	function res_to_late() 
+	Line 209: 	function del_res($del_recur) 
+	Line 251: 	function add_res($users_to_invite = array(), $resources_to_add = array()) 
+	Line 385: 	function mod_res($users_to_invite, $users_to_remove, $unchanged_users, $resources_to_add, $resources_to_remove, $del, $mod_recur) {
+	Line 511: 	function approve_res($mod_recur) {
+	Line 553: 	function print_success($verb, $dates = array()) {
+	Line 573: 	function check_startdate() {
+	Line 623: 	function check_times() {
+	Line 640: 	function check_min_max() {
+	Line 664: 	function check_janrchecks() {
+	Line 741: 	function check_reservation_status($orig_status_res) {
+	Line 810: 	function check_res($resources_to_add) {
+	Line 829: 	function check_res_resource_verlenging() {
+	Line 849: 	function check_res_resource_only() {
+	Line 864: 	function check_perms($kill = true) {
+	Line 888: 	function print_res() {
+	Line 973: 	function print_to_mail_accessories ($resid) {
+	Line 995: 	function print_to_mail_accessories_tot ($resid) {
+	Line 1018:         * This function sends an email notifiying the user
+	Line 1025:         function send_email($type, $repeat_dates = null, $users_to_inform = null) {
+	Line 1536: 	function invite_users($userinfo, $dates, $accept_code) {
+	Line 1576: 	function remove_users_email($emails, $dates) {
+	Line 1608: 	* This function updates a users reservation status
+	Line 1615: 	function update_users($memberid, $action, $update_all, $max_participants = 0) {
+	Line 1637: 	function add_participant($memberid, $accept_code) {
+	Line 1646: 	function get_type() {
+	Line 1655: 	function get_id() {
+	Line 1664: 	function get_start() {
+	Line 1673: 	function get_end() {
+	Line 1682: 	function get_date() {
+	Line 1691: 	function get_created() {
+	Line 1700: 	function get_modified() {
+	Line 1709: 	function get_machid() {
+	Line 1718: 	function get_uitleennivo() {
+	Line 1728: 	function get_pending() {
+	Line 1737: 	function get_memberid() {
+	Line 1746: 	function &get_user() {
+	Line 1757: 	function get_parentid() {
+	Line 1766: 	function get_summary() {
+	Line 1775: 	function get_scheduleid() {
+	Line 1784: 	function get_start_date() {
+	Line 1793: 	function get_end_date() {
+	Line 1802: 	function get_end_date_up($up,$adminemail) {
+	Line 1859: 	function get_end_up($up,$adminemail) {
+	Line 1960: 	function hour_hour_to_seconds_hour($hour) {
+	Line 1971: 	function seconds_hour_to_hour_hour($seconds) {
+	Line 1979: 	function get_allow_participation() {
+	Line 1986: 		function get_schedule_address($emailadres) {
+	Line 1994: 	function get_allow_anon_participation() {
+	Line 2003: 	function get_checkout_via() {
+	Line 2012: 	function get_checkin_via() {
+	Line 2021: 	function get_reservation_status() {
+	Line 2029: 	function get_contractsoort() {
+	Line 2037: 	function get_clusterid() {
+	Line 2046: 	function is_repeat() {
+	Line 2050: 		function setNewEndDate () {
+	Line 2102: 		function setNewEndTime () {
+	Line 2160: 	function has_errors() {
+	Line 2168: 	function add_error($msg) {
+	Line 2177: 	function get_last_error() {
+	Line 2188: 	function print_all_errors($kill) {
+	Line 2225: 	function set_type($type) {
+  C:\xampp17\htdocs\schedule\www\lib\ReservationResult.class.php (2 hits)
+	Line 17: 	function ReservationResult() {
+	Line 20: 	function copyFrom(&$res) {
+  C:\xampp17\htdocs\schedule\www\lib\ReservationSearch.php (3 hits)
+	Line 20: 	function ReservationSearch($data = null) {
+	Line 24: 	function getReservation($id) {
+	Line 33: 	function getReservations($userid, $start_date = null, $end_date = null) {
+  C:\xampp17\htdocs\schedule\www\lib\ReservationTime.class.php (1 hit)
+	Line 17: 	function ReservationTime($date, $time) {
+  C:\xampp17\htdocs\schedule\www\lib\Resource.class.php (3 hits)
+	Line 27: 	function Resource($machid = null) {
+	Line 42: 	function get_property($property_name, $machid = null) {
+	Line 58: 	function load_properties($machid = null) {
+  C:\xampp17\htdocs\schedule\www\lib\Schedule.class.php (21 hits)
+	Line 52:     function Schedule($scheduleid, $scheduleType = ALL) {
+	Line 128:     function print_schedule() {
+	Line 233:     function print_calendars() {
+	Line 250:     function canShowReservation($viewable_date, $current_record) {
+	Line 274:     function isViewableDate($current_date, $min_notice, $max_notice) {
+	Line 302:     function print_reservations($artfilter=false) {
+	Line 420:     function get_display_date() {
+	Line 429:     function get_date_vars() {
+	Line 484:     * This function computes and returns an associative array
+	Line 491:     function get_time_array() {
+	Line 528:     function print_jump_links() {
+	Line 537:     function get_reservation_colorstr($rs) {
+	Line 577:     * Calculates and calls the template function to print out leading columns
+	Line 587:     function move_to_starting_col($rs, $start, $prev, $span, $machid, $ts, $clickable, $color) {
+	Line 595:     * Calculates and calls template function to print out trailing columns
+	Line 604:     function finish_row($end, $prev, $span, $machid, $ts, $clickable, $color) {
+	Line 613:     * Calls template function to write out the reservation cell
+	Line 618:     function write_reservation($rs, $colspan, $viewable_date) {
+	Line 694:     * Calls template function to write out the blackout cell
+	Line 698:     function write_blackout($rs, $colspan) {
+	Line 718:     function print_error() {
+  C:\xampp17\htdocs\schedule\www\lib\SelectResource.class.php (3 hits)
+	Line 6: * Perform user specified function when selected
+	Line 41: 	function SelectResource($name = '') {
+	Line 56: 	function printResourceTable() {
+  C:\xampp17\htdocs\schedule\www\lib\SelectUser.class.php (3 hits)
+	Line 5: * Perform user specified function when selected
+	Line 39: 	function SelectUser($fname = '', $lname = '') {
+	Line 58: 	function printUserTable() {
+  C:\xampp17\htdocs\schedule\www\lib\Smtp.class.php (22 hits)
+	Line 57:     function SMTP() {
+	Line 82:     function Connect($host,$port=0,$tval=30) {
+	Line 144:     function Authenticate($username, $password) {
+	Line 207:     function Connected() {
+	Line 227:      * It is not considered good to use this function without
+	Line 232:     function Close() {
+	Line 266:     function Data($msg_data) {
+	Line 399:     function Expand($name) {
+	Line 450:     function Hello($host="") {
+	Line 482:     function SendHello($hello, $host) {
+	Line 524:     function Help($keyword="") {
+	Line 576:     function Mail($from) {
+	Line 618:     function Noop() {
+	Line 661:     function Quit($close_on_error=true) {
+	Line 715:     function Recipient($to) {
+	Line 759:     function Reset() {
+	Line 808:     function Send($from) {
+	Line 856:     function SendAndMail($from) {
+	Line 904:     function SendOrMail($from) {
+	Line 949:     function Turn() {
+	Line 971:     function Verify($name) {
+	Line 1016:     function get_lines() {
+  C:\xampp17\htdocs\schedule\www\lib\Stats.class.php (21 hits)
+	Line 65: 	var $lbl_fnc;			// Dynamic label function name
+	Line 95: 	function Stats() {
+	Line 109: 	function init() {
+	Line 131: 	function set_schedule($scheduleid) {
+	Line 144: 	function load_schedule() {
+	Line 158: 	function get_schedule_list() {
+	Line 166: 	function print_schedule_error() {
+	Line 174: 	function parse() {
+	Line 237: 	function set_label_handler($function_name) {
+	Line 250: 	function set_stats($stat_type) {
+	Line 320: 	function print_stats() {
+	Line 333: 	*  this function takes all the resource ids and loops through them,
+	Line 338: 	function print_multiple_stats() {
+	Line 358: 	function get_total() {
+	Line 367: 	function get_num_users() {
+	Line 376: 	function get_num_rs() {
+	Line 385: 	function get_num_res() {
+	Line 395: 	function get_percent($val) {
+	Line 407: 	function get_total_time() {
+	Line 416: 	function get_title() {
+	Line 424: 	function day_of_month_lbl($index) {
+  C:\xampp17\htdocs\schedule\www\lib\Summary.class.php (5 hits)
+	Line 23: 	function Summary($text) {
+	Line 27: 	function toScheduleCell($available_chars = -1) {
+	Line 54: 	function toScheduleHover() {
+	Line 66: 	function getSize() {
+	Line 70: 	function isVisible() {
+  C:\xampp17\htdocs\schedule\www\lib\Template.class.php (17 hits)
+	Line 30: 	function Template($title = '', $depth = 0) {
+	Line 40: 	* This function prints the HTML header code, CSS link, and JavaScript link
+	Line 45: 	function printHTMLHeader() {
+	Line 131: 	* This function prints out a table welcoming
+	Line 138: 	function printWelcome($is_admin = false, $is_group_admin = false, $is_schedule_admin = false) {
+	Line 203: 	* This function prints out a table of links to
+	Line 208: 	//function showQuickLinks($is_admin = false, $is_group_admin = false) {
+	Line 209: 	function showQuickLinks($is_admin = false, $is_group_admin = false, $is_schedule_admin = false) {
+	Line 340: 	function startMain() {
+	Line 354: 	function endMain() {
+	Line 365: 	* This function prints out a tech email
+	Line 369: 	function printHTMLFooter() {
+	Line 394: 	* This function prints prints simple footer
+	Line 398: 	function printHTMLFooterSimple() {
+	Line 412: 	function set_link() {
+	Line 421: 	function get_link() {
+	Line 429: 	function set_title($title) {
+  C:\xampp17\htdocs\schedule\www\lib\test.php (5 hits)
+	Line 9: 	function __construct($persons_name) {
+	Line 13: 	public function get_name() {
+	Line 18: 	protected function set_name($new_name) {
+	Line 28: 	protected function set_name($new_name) {
+	Line 36: 	function __construct($employee_name) {
+  C:\xampp17\htdocs\schedule\www\lib\Time.class.php (13 hits)
+	Line 23: 	function formatTime($time, $adjust = true, $offset = null) {
+	Line 62: 	function formatDate($date, $format = '', $adjust = true, $offset = null) {
+	Line 84: 	function formatDateTime($ts, $format = '', $adjust = true) {
+	Line 106: 	function formatReservationDate($res_ts, $res_time, $format = '', $format_key = '', $offset = null) {
+	Line 127: 	function getAdjustedTime($timestamp, $res_time = null, $to_server_time = false, $offset = null) {
+	Line 147: 	function getAdjustedDate($timestamp, $res_time = null, $to_server_time = false) {
+	Line 156: 	function getServerTime($datestamp, $minutes = null) {
+	Line 174: 	function getAdjustedHour($hour) {
+	Line 183: 	function getAdjustedMinutes($minutes, $to_server_time = false, $offset = null) {
+	Line 193: 	function getHourOffset($to_server_time = false, $offset = null) {
+	Line 212: 	function minutes_to_hours($minutes) {
+	Line 227: 	function getHours($minutes) {
+	Line 237: 	function getMinutes($minutes) {
+  C:\xampp17\htdocs\schedule\www\lib\Timer.class.php (6 hits)
+	Line 21: 	function Timer($name = 'Timer') {
+	Line 25: 	function start() {
+	Line 29: 	function stop() {
+	Line 33: 	function get_timer_value() {
+	Line 37: 	function print_comment() {
+	Line 41: 	function toString() {
+  C:\xampp17\htdocs\schedule\www\lib\User.class.php (39 hits)
+	Line 45: 	function User($userid = null) {		
+	Line 60: 	function load_by_id() {
+	Line 126: 	function get_id_by_email($email_address) 
+	Line 140: 	function _get_perms() {
+	Line 150: 	function has_perm($machid) {
+	Line 160: 	function _get_emails() {	
+	Line 171: 	function _get_groups() {
+	Line 180: 	function get_groups() {
+	Line 193: 	function get_groupids() {
+	Line 206: 	function get_admin_groups() {
+	Line 226: 	function get_perms() {
+	Line 242: 	function wants_email($type) {
+	Line 253: 	function wants_html() {
+	Line 265: 	function set_emails($e_add, $e_mod, $e_del, $e_app, $e_html) {
+	Line 274: 	function get_user_data() {
+	Line 313: 	function set_password($new_password) {
+	Line 321: 	function add_groups($groups) {
+	Line 330: 	function remove_groups($groups) {
+	Line 340: 	function is_valid() {
+	Line 349: 	function is_group_admin($groupids = null)
+	Line 380: 	function is_schedule_admin($scheduleid = null) {
+	Line 393: 	function set_lang($lang) {
+	Line 402: 	function get_error() {
+	Line 406: 	function get_id() {
+	Line 410: 	function get_fname() {
+	Line 414: 	function get_lname() {
+	Line 418: 	function get_name() {
+	Line 422: 	function get_email() {
+	Line 431: 	function get_email2() {
+	Line 439: 	function get_phone() {
+	Line 442: 	function get_phone2() { // janr
+	Line 448: 	function get_inst() {
+	Line 452: 	function get_position() {
+	Line 456: 	function get_isadmin() {
+	Line 459: 	function get_isscheduleadmin() {
+	Line 463: 	function get_administrated_schedules() {
+	Line 467: 	function get_logon_name() {
+	Line 471: 	function get_lang() {
+	Line 475: 	function get_timezone() {
+  C:\xampp17\htdocs\schedule\www\lib\Utility.class.php (6 hits)
+	Line 14: 	function Utility() { }
+	Line 24: 	function getSortingUrl($query_string, $desired_order, $vert_key = 'vert', $order_key = 'order') {
+	Line 77: 	function _buildPairs($query_string) {
+	Line 101: 	function _flipVert($cur_vert) {
+	Line 118: 	function getAddedItems($orig, $selected) {
+	Line 140: 	function getRemovedItems($orig, $selected) {
+  C:\xampp17\htdocs\schedule\www\lib\vcalendar\VCalExport.php (4 hits)
+	Line 17: 	function VCalExport(&$reservations) {
+	Line 22: 	function _parse() {
+	Line 33: 	function toString() {
+	Line 42: 	function getHeader() {
+  C:\xampp17\htdocs\schedule\www\lib\vcalendar\VCalReservationFormatter.php (5 hits)
+	Line 19: 	function VCalReservationFormatter() {
+	Line 23: 	function setReservation(&$reservation) {
+	Line 27: 	function formatOwner() {
+	Line 35: 	function formatParticipants() {
+	Line 45: 	function formatReminder() {
+  C:\xampp17\htdocs\schedule\www\lib\__greyzone.txt (4 hits)
+	Line 5: function print_success doet ECHO
+	Line 10: function check_res 
+	Line 15: function add_error.... dan
+	Line 17: function print_all_errors  doet ECHO

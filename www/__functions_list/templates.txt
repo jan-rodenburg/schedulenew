@@ -1,0 +1,331 @@
+Search "function " (310 hits in 20 files)
+  C:\xampp17\htdocs\schedule\www\templates\admin.template.php (50 hits)
+	Line 20: function getTool() {
+	Line 30: function print_manage_schedules(&$pager, $schedules, $err) {
+	Line 101: function print_schedule_edit($rs, $edit, &$pager) {
+	Line 212: function print_manage_users(&$pager, $users, $err) {
+	Line 237: 			$(function () {
+	Line 325: 		$group_function = $isAdmin ? 'popGroupEdit' : 'popGroupView';
+	Line 384: function print_manage_coworkers(&$pager, $users, $err) {
+	Line 407: 			$(function () {
+	Line 489: 		$group_function = $isAdmin ? 'popGroupEdit' : 'popGroupView';
+	Line 551: function print_lname_links() {
+	Line 565: function print_manage_resources(&$pager, $resources, $err) {
+	Line 594: 			$(function () {
+	Line 754: function print_search_resources(&$pager, $resources, $err) {
+	Line 761: 			$(function () {
+	Line 869: function print_resource_edit($rs, $scheds, $edit, &$pager) {
+	Line 1113: function print_manage_additional_resources($pager, $resources, $err) {
+	Line 1123: 			$(function () {
+	Line 1198: function print_additional_resource_edit($resource, $edit, &$pager) {
+	Line 1263: function print_manage_perms(&$user, $rs, $err) {
+	Line 1320: function print_approve_reservations($pager, $res, $err) {
+	Line 1410: function print_manage_reservations(&$pager, $res, $err, $toolate) {
+	Line 1421: 			$(function () {
+	Line 1433: 			function deleteReservation(resid) {
+	Line 1440: 			function changeStatus(elm,resid,status) {
+	Line 1444: 			function blockStatusses() {
+	Line 1447: 			function unblockStatusses() {
+	Line 1450: 			function sendconfirmmail(elm,resid,status) {
+	Line 1456: 			function sendtoolatemail(elm,resid,status) {
+	Line 1461: 			function blockmails() {
+	Line 1729: function print_manage_archive(&$pager, $res, $err) {
+	Line 1739: 			$(function () {
+	Line 1931: function print_manage_announcements(&$pager, $announcements, $err) {
+	Line 1986: function print_announce_edit($rs, $edit, &$pager) {
+	Line 2056: function print_manage_groups(&$pager, $groups, $err) {
+	Line 2111: function print_group_edit($group, $edit, &$pager, $group_users = array()) {
+	Line 2168: function print_manage_email($users, $sub, $msg, $usr, $err) {
+	Line 2236: function preview_email($sub, $msg, $usr) {
+	Line 2277: function print_email_results($subject, $msg, $success) {
+	Line 2295: function show_tables($tables, $fields) {
+	Line 2318: function start_exported_data($xml, $table_name) {
+	Line 2328: function print_exported_data($data, $xml) {
+	Line 2358: function print_blackouts($resource, $blackouts) {
+	Line 2368: function end_exported_data($xml, $table_name) {
+	Line 2377: function print_reset_password(&$user) {
+	Line 2413: function print_not_allowed() {
+	Line 2422: function cancel_button(&$pager) {
+	Line 2432: function submit_button($value, $get_value = '') {
+	Line 2442: function hidden_fn($value) {
+	Line 2451: function print_jscalendar_setup($start = null, $end = null) {
+	Line 2485: function print_additional_tools_box($links) {
+  C:\xampp17\htdocs\schedule\www\templates\auth.template.php (3 hits)
+	Line 23: function print_register_form($edit, $data = array(), $msg = '', $memberid = '') {
+	Line 235: function print_registerCoworker_form($edit, $data = array(), $msg = '', $memberid = '') {
+	Line 464: function printLoginForm($msg = '', $resume = '') {
+  C:\xampp17\htdocs\schedule\www\templates\bug.template.php (2 hits)
+	Line 17: function printBugForm() {
+	Line 62: function print_thank_you() {
+  C:\xampp17\htdocs\schedule\www\templates\copycluster.php (4 hits)
+	Line 85: * @param string $fn function to perform
+	Line 103: function process_reservation_make_cluster_copy($fn) 
+	Line 189: function present_reservation($resid) {
+	Line 297: function getResInfo() {
+  C:\xampp17\htdocs\schedule\www\templates\copycluster.template.php (54 hits)
+	Line 17: function print_mod() {
+	Line 27: function print_title($name, $fname, $lname, $is_blackout = false, $is_private = false) {
+	Line 45: function begin_reserve_form($isnew, $is_blackout = false) {
+	Line 60: function begin_container() {
+	Line 105: function print_basic_panel(&$res, &$rs, $is_private, $toolate, $clusters) {
+	Line 247: function print_users_panel($res, $users, $is_owner, $max_participants, $viewable = true, $day_has_passed) {
+	Line 302: function print_additional_tab($res, $all_resources, $is_owner, $viewable) {
+	Line 383: function print_accessories ($res) {
+	Line 410: function print_invite_selectboxes($res, $users, $user_info) {
+	Line 466: function print_participating_users($user_info) {
+	Line 505: function print_invited_particpating_users($user_info){
+	Line 528: function print_participation_checkboxes($allow_part, $allow_anon) {
+	Line 542: function print_join_form($allow_participation, $allow_anon_participation, $parentid) {
+	Line 589: function print_join_form_tags() {
+	Line 607: function end_container() {
+	Line 618: 			function deleteReservationFromReserve(resid) {
+	Line 634: function print_buttons_and_hidden(&$res) { //jaro
+	Line 738: * This function prints out begin of aa table containing
+	Line 742: function begin_print_resource_data_overzicht(&$rs, $colspan = 1) {
+	Line 753: * This function prints out begin of aa table containing
+	Line 757: function begin_print_resource_data(&$rs, $colspan = 1) {
+	Line 767: * This function prints out end of a table containing
+	Line 771: function end_print_resource_data(&$rs, $colspan = 1) {
+	Line 783: * This function prints out a table containing
+	Line 787: function print_resource_data(&$rs, $colspan = 1) {
+	Line 821: function print_addart_link(&$rs, $type,$resid ) {	
+	Line 838: function print_rest_cluster ($resid, $clusters, $pending=false)
+	Line 892: function print_resource_data_one_resource(&$rs, $type, $pending, $allowed_reservation_status, $allowed_reservation_status_cv, $resid) {
+	Line 931: function print_reservation_status_alt($type,$allowed_reservation_status, $allowed_reservation_status_cv) { ?>
+	Line 975: function print_table01_end() {
+	Line 983: * This function will print out all available times to make
+	Line 992: function print_time_info($res, $rs, $print_min_max = true, $allow_multi = false, $toolate) {
+	Line 1095: * This function will print out information about
+	Line 1100: function print_user_info($type, $user) {
+	Line 1170: * This function will print out checkin en checkout van deze reservering
+	Line 1175: function print_checkoutin_info($type, $allowed_checkout, $allowed_checkout_cv, $allowed_checkin, $allowed_checkin_cv) {
+	Line 1248: function print_create_modify($c, $m) {
+	Line 1269: function print_contractform($summary, $contractsoort, $type) {
+	Line 1301: function print_summaryform($summary, $contractsoort, $type) {
+	Line 1334: function print_table02_end() {
+	Line 1353: function print_recur_checkbox($parentid) {
+	Line 1359: function print_del_checkbox() {
+	Line 1372: function print_repeat_box($month, $year) {
+	Line 1445: function print_reminder_box($reminder_times, $selected_minutes, $reminderid) {
+	Line 1478: function print_pending_approval_msg() {
+	Line 1501: function print_checkout_via($allowed_checkout, $allowed_checkout_cv) {
+	Line 1534: function print_checkin_via($allowed_checkin, $allowed_checkin_cv) {
+	Line 1567: 	function print_warning($msg,$kill=false) {
+	Line 1581: function print_export_button($id) {
+	Line 1601: function end_reserve_form() {
+	Line 1606: function janr_test() {
+	Line 1692: function divide_table() {
+	Line 1704: function getShowHide($table) {
+	Line 1716: function print_jscalendar_setup(&$res, $rs) {
+  C:\xampp17\htdocs\schedule\www\templates\cpanel.template.php (19 hits)
+	Line 20: * This function prints out the announcement table
+	Line 26: function showAnnouncementTable($announcements) {
+	Line 77: * This function prints a table of all upcoming
+	Line 84: function showReservationTable($res, $err) {
+	Line 179: function showTrainingTable($per, $err) {
+	Line 232: * This function prints a table of all upcoming
+	Line 238: function showInvitesTable($res, $err) {
+	Line 300: * This function prints a table of all upcoming
+	Line 306: function showParticipatingTable($res, $err) {
+	Line 366: * This function prints out a table of links to
+	Line 371: //function offerScheduleSearch($is_admin = false, $is_group_admin = false) {
+	Line 372: function linkScheduleSearch($is_admin = false, $is_group_admin = false, $is_schedule_admin = false) {
+	Line 381: * This function prints out a table of links to
+	Line 386: //function showQuickLinks zie template.class
+	Line 391: function printCpanelBr() {
+	Line 401: function getShowHide($table) {
+	Line 409: function startQuickLinksCol() {
+	Line 417: function startDataDisplayCol() {
+	Line 427: function endDataDisplayCol() {
+  C:\xampp17\htdocs\schedule\www\templates\export.template.php (2 hits)
+	Line 12: function print_export_table() {
+	Line 61: function print_jscalendar_setup() {
+  C:\xampp17\htdocs\schedule\www\templates\mycalendar.template.php (7 hits)
+	Line 21: function print_calendars(&$prev, &$next, &$curr) {
+	Line 50: function print_date_span($firstDate, $lastDate, $type, $addl_params = array(), $addl_values = array(), $name = null) {
+	Line 95: function print_view_links($datestamp, $current_view, $addl_params = array(), $addl_values = array()) {
+	Line 128: function print_day_reservations($reservations, $datestamp, $days, $show_owner_icon = true, $is_private = false, $scheduleid = null) {
+	Line 207: function print_month_reservations($reservations, $datestamp, $fields = array('name'), $ownerParticipantImage = true, $is_private = false, $scheduleid = null) {
+	Line 311: function print_details_div() {
+	Line 322: function build_reservation_detail_div($res) {
+  C:\xampp17\htdocs\schedule\www\templates\my_email.template.php (2 hits)
+	Line 17: function print_email_contacts(&$user) {
+	Line 73: function print_success() {
+  C:\xampp17\htdocs\schedule\www\templates\print.template.php (52 hits)
+	Line 18: function print_mod() {
+	Line 25: function print_header($header) {
+	Line 36: function print_title($id, $fname, $lname) {
+	Line 60: function print_create_modify($c, $m) {
+	Line 78: function begin_container() {
+	Line 101: function print_basic_panel(&$res, &$rs, $is_private, $toolate, $clusters) {
+	Line 194: 		window.setTimeout(function () {
+	Line 205: function print_additional_tab($res, $all_resources, $is_owner, $viewable) {
+	Line 282: function print_additional_tabmy($res, $all_resources, $is_owner, $viewable) {
+	Line 361: function xprint_accessories ($res) {
+	Line 388: function print_invite_selectboxes($res, $users, $user_info) {
+	Line 444: function print_participating_users($user_info) {
+	Line 483: function print_invited_particpating_users($user_info){
+	Line 506: function print_participation_checkboxes($allow_part, $allow_anon) {
+	Line 519: function end_container() {
+	Line 532: function print_buttons_and_hidden(&$res) {
+	Line 621: * This function prints out begin of aa table containing
+	Line 625: function begin_print_resource_data(&$rs, $colspan = 1) {
+	Line 632: * This function prints out end of a table containing
+	Line 636: function end_print_resource_data(&$rs, $colspan = 1) {
+	Line 645: * This function prints out end of a table containing
+	Line 649: function end_print_resource_dataxxxxx(&$rs, $colspan = 1) {
+	Line 664: function print_addart_link(&$rs, $type) {	
+	Line 679: function print_resource_data_one_resource(&$rs, $type, $pending, $allowed_reservation_status, $allowed_reservation_status_cv) {
+	Line 725: function print_rest_cluster ($resid, $clusters)
+	Line 779: function print_additional_resource($res) {
+	Line 803: function print_reservation_status_altxxxxx($type,$allowed_reservation_status, $allowed_reservation_status_cv) { ?>
+	Line 837: function print_table01_end() {
+	Line 846: * This function will print out all available times to make
+	Line 855: function print_time_info($res, $rs, $print_min_max = true, $allow_multi = false, $toolate,$allowed_checkout_cv, $allowed_checkin_cv) {
+	Line 896: * This function will print out checkin en checkout van deze reservering
+	Line 900: function print_checkoutin_info( $allowed_checkout_cv, $allowed_checkin_cv) {
+	Line 916: * This function will print out information about
+	Line 921: function print_user_info($type, $user) {
+	Line 966: function print_create_modifyxxxxaaaaax($c, $m) {
+	Line 987: function print_contractform($summary, $contractsoort, $type) {
+	Line 1019: function print_summaryform($summary, $contractsoort, $type) {
+	Line 1037: function print_table02_end() {
+	Line 1045: function print_finalnote($contractsoort, $user, $header ) {
+	Line 1074: function print_recur_checkbox($parentid) {
+	Line 1080: function print_del_checkbox() {
+	Line 1093: function print_repeat_box($month, $year) {
+	Line 1166: function print_reminder_box($reminder_times, $selected_minutes, $reminderid) {
+	Line 1199: function print_pending_approval_msg() {
+	Line 1222: function print_checkout_via($allowed_checkout, $allowed_checkout_cv) {
+	Line 1255: function print_checkin_via($allowed_checkin, $allowed_checkin_cv) {
+	Line 1288: 	function print_warning($msg,$kill=false) {
+	Line 1300: function print_export_button($id) {
+	Line 1317: function janr_test() {
+	Line 1403: function divide_table() {
+	Line 1415: function getShowHide($table) {
+	Line 1427: function print_jscalendar_setup(&$res, $rs) {
+  C:\xampp17\htdocs\schedule\www\templates\rescalendar.template.php (4 hits)
+	Line 23: function print_resource_jump_link($resources, $schedules, $machid, $scheduleid, $datestamp, $type, $isresource) 
+	Line 52: function print_resource_options($resources, $scheduleid, $selectedMachid)
+	Line 81: function print_day_resource_reservations($reservations, $datestamp, $days, $scheduleid, $start_time, $end_time, $time_span, $is_private = false) {
+	Line 210: function print_signup_sheet($reservations, $datestamp, $days, $start_time, $end_time, $time_span, $resource_name, $is_private = false) {
+  C:\xampp17\htdocs\schedule\www\templates\reserve.php (4 hits)
+	Line 85: * @param string $fn function to perform
+	Line 87: function process_reservation($fn) 
+	Line 320: function present_reservation($resid) {
+	Line 362: function getResInfo() {
+  C:\xampp17\htdocs\schedule\www\templates\reserve.template.php (54 hits)
+	Line 20: function print_mod() {
+	Line 30: function print_title($name, $fname, $lname, $is_blackout = false, $is_private = false) {
+	Line 48: function begin_reserve_form($isnew, $is_blackout = false) {
+	Line 63: function begin_container() {
+	Line 108: function print_basic_panel(&$res, &$rs, $is_private, $toolate, $clusters) {
+	Line 248: function print_users_panel($res, $users, $is_owner, $max_participants, $viewable = true, $day_has_passed) {
+	Line 303: function print_additional_tab($res, $all_resources, $is_owner, $viewable) {
+	Line 384: function print_accessories ($res) {
+	Line 411: function print_invite_selectboxes($res, $users, $user_info) {
+	Line 467: function print_participating_users($user_info) {
+	Line 506: function print_invited_particpating_users($user_info){
+	Line 529: function print_participation_checkboxes($allow_part, $allow_anon) {
+	Line 543: function print_join_form($allow_participation, $allow_anon_participation, $parentid) {
+	Line 590: function print_join_form_tags() {
+	Line 608: function end_container() {
+	Line 616: 			function deleteReservationOneResource(resid) {
+	Line 633: function print_buttons_and_hidden(&$res) {
+	Line 770: * This function prints out begin of aa table containing
+	Line 774: function begin_print_resource_data_overzicht(&$rs, $colspan = 1) {
+	Line 785: * This function prints out begin of aa table containing
+	Line 789: function begin_print_resource_data(&$rs, $colspan = 1) {
+	Line 799: * This function prints out end of a table containing
+	Line 803: function end_print_resource_data(&$rs, $colspan = 1) {
+	Line 815: * This function prints out a table containing
+	Line 819: function print_resource_data(&$rs, $colspan = 1) {
+	Line 853: function print_addart_link(&$rs, $type,$resid ) {	
+	Line 870: function print_rest_cluster ($resid, $clusters, $pending=false)
+	Line 925: function print_resource_data_one_resource(&$rs, $type, $pending, $allowed_reservation_status, $allowed_reservation_status_cv, $resid) {
+	Line 970: function print_reservation_status_alt($type,$allowed_reservation_status, $allowed_reservation_status_cv) { ?>
+	Line 1014: function print_table01_end() {
+	Line 1022: * This function will print out all available times to make
+	Line 1031: function print_time_info($res, $rs, $print_min_max = true, $allow_multi = false, $toolate) {
+	Line 1201: * This function will print out information about
+	Line 1206: function print_user_info($type, $user) {
+	Line 1283: * This function will print out checkin en checkout van deze reservering
+	Line 1288: function print_checkoutin_info($type, $allowed_checkout, $allowed_checkout_cv, $allowed_checkin, $allowed_checkin_cv) {
+	Line 1361: function print_create_modify($c, $m) {
+	Line 1382: function print_contractform($summary, $contractsoort, $type) {
+	Line 1414: function print_summaryform($summary, $contractsoort, $type) {
+	Line 1447: function print_table02_end() {
+	Line 1466: function print_recur_checkbox($parentid) {
+	Line 1472: function print_del_checkbox() {
+	Line 1485: function print_repeat_box($month, $year) {
+	Line 1558: function print_reminder_box($reminder_times, $selected_minutes, $reminderid) {
+	Line 1591: function print_pending_approval_msg() {
+	Line 1614: function print_checkout_via($allowed_checkout, $allowed_checkout_cv) {
+	Line 1647: function print_checkin_via($allowed_checkin, $allowed_checkin_cv) {
+	Line 1680: 	function print_warning($msg,$kill=false) {
+	Line 1694: function print_export_button($id) {
+	Line 1714: function end_reserve_form() {
+	Line 1719: function janr_test() {
+	Line 1805: function divide_table() {
+	Line 1817: function getShowHide($table) {
+	Line 1829: function print_jscalendar_setup(&$res, $rs) {
+  C:\xampp17\htdocs\schedule\www\templates\schedule.template.php (22 hits)
+	Line 24: function print_date_span($d, $title ,$today) {
+	Line 38: function print_schedule_name($links, $currentid) {
+	Line 53: function print_schedule_list($links, $currentid) {
+	Line 74: function print_color_key() {
+	Line 94: * This function starts the table for each day
+	Line 99: function start_day_table($displayDate, $hour_header, $isCurrentDate) {
+	Line 114: function print_calendars(&$prev, &$curr, &$next) {
+	Line 130: function get_hour_header($th, $startDay, $endDay, $timespan) {
+	Line 157: * This function simply prints out the HTML to close off
+	Line 161: function end_day_table() {
+	Line 179: function print_name_cell($ts, $id, $name, $shown, $is_blackout, $scheduleid, $pending = false, $color = '' ) {
+	Line 223: function print_blank_cols($cols, $start, $span, $ts, $machid, $scheduleid, $scheduleType, $clickable, $class = '') {
+	Line 242: function print_closing_tr() {
+	Line 250: * // @param string $mod_view indentifying character for javascript reserve function to mod or view reservation
+	Line 251: * @param string $mod_view indentifying character for javascript reserve function to mod OR CLUSTER or view reservation
+	Line 260: function write_reservation($colspan, $color_select, $mod_view, $resid, $summary = '',$summaryhover= '', $viewable = false, $read_only = false, $pending = 0) {
+	Line 303: function write_blackout($colspan, $viewable, $blackoutid, $summary = '', $showsummary = 0) {
+	Line 338: function print_summary_div() {
+	Line 348: function print_jquery_search() {
+	Line 352: 			$(function () {
+	Line 406: * This function prints out the HTML links to allow
+	Line 415: function print_jump_links($_date, $viewdays, $printAllCols) {
+  C:\xampp17\htdocs\schedule\www\templates\selectresource.template.php (3 hits)
+	Line 25: function print_resource_list(&$pager, $resources, $err, $javascript, $resid, $available, $uitleennivo) 
+	Line 34: 			$(function () {
+	Line 141: function print_name_links() {
+  C:\xampp17\htdocs\schedule\www\templates\selectuser.template.php (3 hits)
+	Line 20: function print_user_list(&$pager, $users, $err, $javascript) 
+	Line 27: 			$(function () {
+	Line 107: function print_lname_links() {
+  C:\xampp17\htdocs\schedule\www\templates\stats.template.php (4 hits)
+	Line 16: function print_schedule_list($links, $currentid) {
+	Line 39: function print_quick_stats(&$stats) {
+	Line 97: function print_system_stats(&$stats) {
+	Line 196: function print_stats(&$stats, $index = NULL) {
+  C:\xampp17\htdocs\schedule\www\templates\usage.template.php (11 hits)
+	Line 17: * This function prints out a form for the administrator
+	Line 28: function showForm($min_max, $users, $machs, $schedules) {
+	Line 319: * This function prints out links to view
+	Line 327: function printUserInfo($fname, $lname, $memberid, $type) {
+	Line 358: function printTableHeader($fname, $lname, $name, $type, $schedule) {
+	Line 393: function print_csv_header() {
+	Line 399: * This function prints the closing row and tags
+	Line 405: function printTableFooter($hours, $type, $percent) {
+	Line 432: * This function prints out the bulk of the reservation data for text and html output
+	Line 452: function print_reservation_data($type, &$link, $resNo, $start_date, $end_date, $created, $modified, $starttime, $endtime, $totTime, $resid, $fname, $lname, $name, $memberid, $schedule) {
+	Line 527: function print_change_output($form, $obj_name = '') {
+  C:\xampp17\htdocs\schedule\www\templates\usergroup.template.php (8 hits)
+	Line 2: function print_groups_to_add($groups) {
+	Line 13: function print_groups_to_remove($groups) {
+	Line 24: function print_move_buttons() {
+	Line 32: function print_groups_to_view($groups) {
+	Line 42: function begin_table($name) {
+	Line 47: function end_table() {
+	Line 51: function print_save_button($id) {
+	Line 57: function close_window() {
+  C:\xampp17\htdocs\schedule\www\templates\userinfo.template.php (2 hits)
+	Line 17: function printUI(&$user) {
+	Line 70: function printLinks($prev, $next) {

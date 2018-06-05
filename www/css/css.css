@@ -1,0 +1,810 @@
+bodydepr {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #F0F0F0;    			
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: #333333;
+	font-size: 11px;
+}
+body {
+	
+	color: black;
+	background: white;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	
+	margin: 2px;
+
+}	
+a {
+    color: #104E8B;
+    text-decoration: none;
+}
+a:hover {
+    color: #474747;
+    text-decoration: underline;
+}
+/*
+Common text settings
+*/
+p {
+    font-size: 11px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+h5 {
+    margin-bottom: 0px;
+	margin-top: 0px;
+    font-size: 12px;
+}
+h4 {
+	font-size: 13px;
+}
+h3 {
+	font-size: 18px;
+	margin-top: 0px;
+}
+table {
+	border-width: 0;
+	font-size: 11px;
+}
+/*
+Error box settings
+*/
+.alert {
+    color: #CC0000;
+	background-color: #FFFFFF;
+    text-align: center;
+	width: 60%;
+	border: solid #8B0000 2px;
+	padding: 5px;
+	margin-bottom: 5px;
+	font-size: 11px;
+}
+/*
+Form text box settings
+*/
+.textbox {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;  
+    color: #36648B;
+    background-color: #FCFCFC;
+	/*size:50; */
+}
+/*
+Form button settings
+*/
+.button  , a.button{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+	border: solid 1px #7C7A7A;
+	color: #36648B;
+	background-color: #E7E7E7;
+	padding:0 5px 0 5px; width:auto; margin-right:10px;
+}
+/* button fixed on schedule*/
+.blockfs{
+/* position:fixed;padding:3px;background:#F8FAEA;top:50px;left:10px; */
+position:fixed;padding:3px;background:#F8FAEA;top:0px;left:450px;margin-left: auto;background:#A0A1A1;
+	margin-right: auto; 
+}
+.buttonfs{
+	margin-left:8px; padding:4px; 
+}
+.right {
+    float:right;
+}
+.buttonextra  { 
+	padding:0 10px 0 10px; 
+	width:auto; 
+	padding:30px 10px;
+	float:left;
+	margin-right:20px;
+}
+a.buttonextra  { 
+vertical-align:middle;
+}
+.buttoniframe  { 
+	margin-left:8px; padding:4px; 
+}
+/*
+Data table head row settings
+*/
+.tableTitle {
+    font-size: 11px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 10px; padding-top: 1px; padding-bottom: 1px; padding-right: 5px;
+	background-color: #36648B;
+	height: 20px;
+	vertical-align: middle;
+}
+.tableTitle_new {
+    font-size: 14px;
+    font-weight: bold;
+    color: #030303;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+    padding-right: 5px;
+    background-color: #fff;
+    height: 20px;
+    vertical-align: middle;
+}
+.tableTitle a, .tableTitle a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+/*
+Welcome message settings
+*/
+.welcomeBack {
+    font-size: 11px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+/*
+Table border color
+*/
+.tableBorder {
+    background-color: #8a8a8a;
+}
+
+.cpanelCell td {
+    padding: 2px;
+    font-size: 11px;
+}
+td {vertical-align:top}
+/*
+Common data cell settings
+*/
+td.cellColor, .cellColor td, .cellColor {
+    padding: 2px;
+	padding-left: 5px;
+    background-color: #FFFFFF;
+    font-size: 11px;
+}
+td.cellColor {width:50%}
+/*
+Alternating row colors
+*/
+td.cellColor0, .cellColor0 td, .cellColor0, .warningCell0 
+{
+    padding: 2px;
+    background-color: #FFFFFF;
+    font-size: 11px;
+}
+td.cellColor1, .cellColor1 td, .cellColor1 
+{
+    padding: 2px;
+	background-color: #F8FAEA;
+	background-color: #fafafa;
+    font-size: 11px;
+}
+.w15 {width:15%}
+.w35 {width:35%}
+.w20 {width:20%}
+.w30 {width:30%}
+.w50 {width:50%}
+
+
+.contract {padding:0px}
+
+.klein , td.klein{font-size:8px;}
+
+.groot , td.groot{font-size:13px;font-weight:bold}
+.heelgroot , td.heelgroot{font-size:20px;font-weight:bold}
+.indent , td.indent{padding-left:20px;}
+.whiteline {margin: 1px 0 1px 0;background-color:white}
+/*****************************************/
+
+.r0 td, .ro0 td
+{
+    padding: 2px;
+    background-color: #FFFFFF;
+    font-size: 11px;
+}
+
+.r1 td, .ro1 td
+{
+    padding: 2px;
+    background-color: #F8FAEA;
+    font-size: 11px;
+}
+
+.r0 td:hover, .r1 td:hover
+{
+    cursor:pointer;
+    background-color: green;
+}
+.r0 td.o:hover
+{
+	cursor: default;
+	background-color: #FFFFFF;
+}
+
+.r1 td.o:hover
+{
+	cursor: default;
+	background-color: #F8FAEA;
+}
+
+.r0:hover td.resourceName, .r1:hover td.resourceName
+{
+    background-color: #f7f18b;
+}
+
+.r0 td.resourceName:hover, .r1 td.resourceName:hover
+{
+	cursor: default;
+	background-color: #EDEDED;
+}
+
+/*****************************************/
+
+.warningCell1 {
+    padding: 2px;
+    background-color: #D56060;
+    font-size: 11px;
+}
+/*
+Table data row heading settings
+*/
+td.rowHeaders, .rowHeaders td {
+    color: #333333;
+    background-color: #EDEDED;
+    font-weight: bold;
+    text-align: center;
+    font-size: 11px;
+}
+/*
+Individal time cells for the scheduler
+*/
+td.scheduleTimes, .scheduleTimes td {
+    font-size: 11px;
+    color: #333333;
+    text-align: left;
+    background-color: #EDEDED;
+    padding-left: 2px;
+}
+/*
+Date cell for the scheduler
+*/
+td.scheduleDate, .scheduleDate td, .scheduleDateHeader, td.scheduleDateCurrent {
+    font-size: 11px;
+    color: #FFFFFF;
+    background-color: #A2B5CD;
+    text-align: center;
+    padding: 2px;
+}
+
+td.scheduleDateCurrent {
+	font-weight: bold;
+	background-color: #5E7FB1;
+}
+
+.scheduleDateHeader {
+	border-bottom: 1px #36648B solid;
+}
+
+td.scheduleDate, td.scheduleDateHeader a {
+	color: #FFFFFF;
+}
+/*
+Resource name cell for the scheduler
+*/
+td.resourceName, td.resourceNameOver {
+    color: #333333;
+    font-size: 11px;
+    background-color: #EDEDED;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 5px;
+}
+
+td.resourceNameOver {
+    background-color: #FAFAFA;
+}
+/*
+Edit form cell settings
+*/
+td.formNames {
+    font-size: 11px;
+    background-color: #ffffff;
+    padding-left: 5px;
+	width:50%
+}
+/*
+Reserved cell settings for the scheduler
+*/
+td.reservedCell {
+    font-size: 10px;
+    background-color: #B0C4DE;
+}
+td.reservationOver {
+	background-color: #3EBD30;
+}
+/*
+Inactive resource text color
+*/
+.inact {
+    color: #BDBDBD;
+}
+/*
+Color of the outermost border on every page
+*/
+.mainBorder {
+   /* border: solid 1px #CCCCCC; */
+}
+/*
+Background color of main section on every page
+*/
+.mainBkgrdClr {
+  /*   background-color: #FAFAFA; */
+}
+/*
+Alert message settings
+*/
+.message {
+	background-color: #FEFEFE;
+	text-align: center;
+	width: 60%;
+	border: solid #E0E0E0 1px;
+	padding: 5px;
+	margin-bottom: 5px;
+	font-size: 11px;
+}
+
+/*
+Summary popup box
+*/
+.summary_div {
+	position: absolute;
+	visibility: hidden;
+	border: solid #686767 1px;
+	padding: 5px;
+	background-color: #fefefe;
+	overflow: visible;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+/*
+Recurring reservation box
+*/
+.recur_box {
+	background-color: #D0D4E4;
+	color: #282D42;
+	border: solid 1px #8B94B1;
+}
+
+/*
+Calendar settings
+*/
+.monthNameStyle {
+	font-size: 11px;
+	text-align: center;
+}
+.dayBoxStyle {
+	font-size: 10px;
+	background-color: #F0F0F0;
+	text-align: center;
+	width: 25px;
+	height: 25px;
+}
+.currentDayBoxStyle {
+	width: 25px;
+	height: 25px;
+	font-size: 10px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+.emptyDayStyle {
+	background-color: #D5D8D3;
+}
+.dayNamesStyle {
+	font-size: 11px;
+	text-align: center;
+	height: 25px;
+	background-color: #DDCAF6;
+}
+.navMonthStyle {
+	font-size: 11px;
+	color: #000000;
+}
+.selectBoxStyle {
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Reservation tab select */
+.tab-row td {
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+}
+.tab-row a {
+	text-decoration:none;
+}
+.tab-selected {
+	border-right:solid 1px #CCCCCC;
+	border-top:solid 1px #CCCCCC;
+	border-left:solid 1px #CCCCCC;
+	width:100px;
+	color: #0000ff;
+	height:20px;
+}
+.tab-selected a {
+	color: #000000;
+}
+.tab-not-selected {
+	border:solid 1px #D1D1D1;
+	width:100px;
+	background-color: #EDEDED;
+	border-bottom: solid 1px #CCCCCC;
+}
+.tab-not-selected a {
+	color: #666666;
+}
+.tab-filler {
+	border-bottom:solid 1px #CCCCCC;
+}
+.tab-main {
+	border-right:solid 1px #CCCCCC;
+	border-left:solid 1px #CCCCCC;
+	border-bottom:solid 1px #CCCCCC;
+}
+.tab-main-print {
+
+}
+/*************************************
+
+/** MyCalendar **/
+.MyCalCellColor {
+    padding: 2px;
+    background-color: #FFFFFF;
+    font-size: 11px;
+}
+
+.MyCalCellColorEmpty {
+	background-color: #F0F0F0;
+}
+
+.MyCalDayBox {
+	padding: 2px;
+	background-color: #FFFFFF;
+	font-size: 11px;
+	width: 140px;
+	height: 120px;
+	vertical-align: top;
+}
+
+.MyCalEmptyDayBox {
+	padding: 2px;
+	background-color: #EEEEEE;
+	font-size: 11px;
+	vertical-align: top;
+}
+
+.MyCalCurrentDayBox {
+	padding: 2px;
+	background-color: #FFFFFF;
+	font-size: 11px;
+	vertical-align: top;
+	border: solid 1px #36648B;
+}
+
+.MyCalDateNumber, a.MyCalDateNumber {
+	font-size: 12px;
+}
+
+.MyCalCellColor p, .MyCalDayBox p, .MyCalEmptyDayBox p, .MyCalCurrentDayBox p {
+	margin-bottom: 7px;
+}
+
+div.mycal_div {
+	position: absolute;
+	visibility: hidden;
+	border-top: solid #7C7C7C 1px;
+	border-left: solid #7C7C7C 1px;
+	border-right: solid #6F6F6F 2px;
+	border-bottom: solid #6F6F6F 2px;
+	background-color: #FEFFFE;
+	padding: 3px;
+	overflow: visible;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	color: #616161;
+}
+
+/* SelectUser colors */
+.SelectUserRowOver, .SelectUserRowOver td, td.SelectUserRowOver {
+	background-color: #D9EAF5;
+	padding: 2px;
+    font-size: 11px;
+	cursor: pointer;
+}
+
+/* Admin row-selected color */
+.adminRowSelected, .adminRowSelected td {
+    padding: 2px;
+    background-color: #D3DBF7;
+    font-size: 11px;
+}
+
+/* Font style for errors and warnings */
+.warningText {
+	color: #FF0000;
+	text-align: center;
+}
+
+/* Admin table to list additional tools for this section */
+.additionalTools, .additionalTools tr {
+	margin-bottom:15px;
+	border: solid 1px #CCCCCC;
+	width: 170px;
+	background-color: #ECECEC;
+}
+
+.additionalToolsHead {
+	border-bottom: solid 1px #CCCCCC;
+	background-color: #E0E0E0;
+}
+
+.messagePositive {
+	color: #FFFFFF;
+	background-color: #329D11;
+	font-size: 13px;
+	font-weight: bold;
+	text-align:center;
+
+}
+
+.messageNegative {
+	color: #FFFFFF;
+	background-color: #751814;
+	font-size: 13px;
+	font-weight: bold;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.messageNegativeBG {
+	background-color: #751814;
+}
+
+.export_menu {
+	display:none;
+	position:absolute;
+	width:100px;
+	height:45px;
+}
+
+.export_menu table {
+	background-color:#999999;
+}
+
+.export_menu td.export_menu_out, td.export_menu_over {
+	padding-left: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+.export_menu td.export_menu_out {
+	background-color: #EDEDED;
+	cursor: default;
+} 
+
+.export_menu, td.export_menu_over {
+	background-color: #FFFFFF;
+	cursor:pointer;
+}
+
+div.textbox, div.blur_textbox {
+	border: solid 1px #666666;
+	padding: 2px;
+}
+
+div.blur_textbox {
+	background-color: #EEEEEE;
+}
+
+div.inlineSummary{
+	width:100%;
+	overflow:hidden;
+	height:13px;
+}
+fieldset {
+    float: left;
+    width: auto;
+	margin:0;
+	border:0;
+	padding:0;
+		padding-bottom:5px;
+	display:block;
+}
+#execute {
+	border:0;
+	background: #ffffff;
+	overflow:hidden; 	
+	height:25px;
+	/* height:225px;  deze handig voor test, default is 25 */
+	border: 0px solid black;
+}
+.star {
+	color: #ff0000;
+	font-size: 250%; margin-top:8px;margin-left:4px;
+}
+tr.cellColor0.NOT.AVAILABLE
+{
+    background-color: #FF0000;
+    font-size: 9px;
+}
+tr.cellColor0.NOT.AVAILABLE td
+{
+    background-color: #FF0000;
+    color: #bbbbbb;
+	font-size: 9px;
+}
+/* ==|== media queries ====================================================== */
+/* iPhone 6 Plus in portrait & landscape */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 	
+.blockfs {
+	margin: 0 0;
+    padding: 0px;
+    position: initial;
+    width: 80%;}
+}
+@media only screen and (max-width: 785px) {
+	.blockfs {
+	margin: 0 0;
+    padding: 0px;
+    position: initial;
+    width: 80%;
+	}
+}
+
+
+@media only screen and (max-device-width : 360px) {
+	.blockfs {
+		
+		left: 0;
+		margin: 0 auto;
+		padding: 0px;
+		position: fixed;
+		top: 70px;
+		width: 100%;
+	}
+}	
+
+@media only screen and (max-width: 360px) {
+	.blockfs {
+		
+		left: 0;
+		margin: 0 auto;
+		padding: 0px;
+		position: fixed;
+		top: 70px;
+		width: 100%;
+	}
+}
+/* */
+/* Janr additions
+/* Janr : My Mod */
+.eruit {color: #aaaaaa; }
+.valop {color: #ff0000; }
+.valopgroen {color: green; }
+.valop1 {color: #F78181; }
+.valop2 {color: #F0F; }
+a .positive {	color: #329D11;}
+.positive {	color: #329D11;}
+a .negative {	color: #329D11;}
+/* box for jquery zoek */
+.clean-gray{
+display:block;
+border:solid 1px #DEDEDE; 
+background:#EFEFEF;
+color:#222222;
+padding:4px;
+text-align:left;
+width:315px;
+}
+.clean-gray-left{
+display:inline;
+float:left;
+padding:0px;
+text-align:left;
+width:60px;
+}
+.clean-gray-right{
+float:right;
+padding:4px;
+text-align:left;
+width:250px;
+}
+.more {
+	float: right; 
+}
+.downcolor {
+color:#668B8B;
+}
+.downcolor1 {
+color:#ddd;
+}
+input:disabled {
+color:#ccc;
+}
+.intro-help {
+	width:70%; 
+	color: #333;
+	background-color:#ededed;
+	padding-left: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-right: 5px;
+}
+.main {
+/* border: 1px solid black; */
+}
+table.resources table tr td.maintenance,
+table.resources table tr td.datum_aankoop,
+table.resources table tr td.aankoopbedrag
+	{
+		
+		display:none;
+	}
+/* datatables override; */
+.dataTables_wrapper .dataTables_length {
+  float: right;
+}
+.dataTables_wrapper .dataTables_filter {
+  float: left;
+  text-align: right;
+}
+/* datatables overrides */
+table.dataTable.dtr-column > tbody > tr > td.control:before, table.dataTable.dtr-column > tbody > tr > th.control:before {
+  /* top: 18%;
+  display: initial;
+  position: initial; */
+}
+table.dataTable thead th, table.dataTable thead td {
+  padding: 7px 18px;
+  background-color:#A2B5CD;
+  font-weight: bold;
+}
+/* phone settings */
+/*
+@media only screen and (max-width: 360px) {
+   
+	* {
+    font-family: initial !important;
+    font-size: initial !important;
+	}
+	
+	* {
+	font-size: 15em;
+		}
+	
+	html, body {
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	}
+	
+	body {
+	  background-color: lightblue;
+	}
+}
+*/

@@ -1,0 +1,20 @@
+				// IF EXISTS
+				//SELECT * FROM `db01_resources` WHERE `machid` LIKE 'ABC'
+		$sql = 'SELECT FROM ' . $this->get_table(TBL_RESOURCES) . ' WHERE machid=$data['newmachid']';
+				//	$q = $this->db->prepare($sql);
+				//	$result = $this->db->execute($q,$rs['newmachid']);
+				//	$this->check_for_error($result);
+		$result = mysql_query($sql);
+		echo ($sql);
+		echo (mysql_num_rows());
+		
+=========================================
+
+				$sql = 'SELECT FROM ' . $resource->get_table(TBL_RESOURCES) . ' WHERE machid=' .$data['newmachid'];
+				$result = mysql_query($sql);
+				echo ($sql);
+				echo ('<br>');
+				echo (mysql_num_rows());
+				if (mysql_num_rows($result) >=1) {
+					$msg[] = translate('Minimum reservation length must be less than or equal to maximum reservation length.');
+					}

@@ -1,0 +1,11 @@
+about user import
+
+http://codeftw.blogspot.com/2009/07/how-to-find-character-encoding-of-text.html
+
+csv in is : iso-8859-1
+		// 		$q .= "$comma \"".mysql_real_escape_string(iconv('UTF-8','ISO-8859-1//TRANSLIT//IGNORE',$val))."\"";
+		// $q .= "$comma \"".mysql_real_escape_string(iconv('ISO-8859-1','latin1//TRANSLIT//IGNORE',$val))."\""; // FOUT FOUT
+		$q .= "$comma \"".mysql_real_escape_string(iconv('ISO-8859-1','UTF-8//TRANSLIT//IGNORE',$val))."\""; // deze osirisinfile=goed; db_login =goed
+
+doctype van html was iso-8859-1
+gewijzigd naar iso-8859-1
